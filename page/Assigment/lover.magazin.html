@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lover MAgazine</title>
+    <style>
+       
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /*header*/
+        .header {
+            width: 100vw;
+            height: 8vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .heading-one {
+            width: 15vw;
+            height: 5vh;
+            background-color: black;
+            margin-left: 2%;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            padding-top: 0.5%;
+        }
+
+        .heading-two {
+            width: 60vw;
+            height: 5vh;
+            background-color: white;
+            margin-left: 30%;
+            padding-top: 1%;
+        }
+
+        .nav-one {
+            font-size: 22px;
+            margin-left: 40%;
+        }
+
+        .nav-two {
+            font-size: 22px;
+            margin-left: 10%;
+        }
+
+        .nav-three {
+            font-size: 22px;
+            margin-left: 10%;
+        }
+
+
+        /* home page*/
+        .home {
+            width: 100vw;
+            height: 90vh;
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box-1 {
+            width: 65vw;
+            height: 90vh;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box-one {
+            width: 65vw;
+            height: 40vh;
+            background-color: rgb(242, 242, 92);
+        }
+
+        .name {
+            margin-left: 5%;
+            font-size: 120px;
+        }
+
+        .box-two {
+            width: 65vw;
+            height: 50vh;
+            background-color: green;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box-3 {
+            width: 35vw;
+            height: 50vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name-one {
+            font-size: 22px;
+            margin-left: 6%;
+        }
+
+        .name-two {
+            font-size: 22px;
+        }
+
+        .box-three {
+            width: 35vw;
+            height: 24vh;
+            background-color: white;
+            font-size: 28px;
+            padding: 8%;
+        }
+
+        .box-four {
+            width: 35vw;
+            height: 8vh;
+            background-color: white;
+        }
+
+        .box-4 {
+            width: 30vw;
+            height: 50vh;
+            background-color: rgb(242, 242, 92);
+        }
+
+        .box-2 {
+            width: 35vw;
+            height: 90vh;
+            background-color: blue;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/leena-murdeshwar/89fbde5cd6-1750048777/mgp_4261-1146x1604.4-crop-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        /*page- one*/
+        .page-1 {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-heading {
+            width: 100vw;
+            height: 5vh;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-four {
+            width: 15vw;
+            height: 5vh;
+            background-color: white;
+            margin-left: 2%;
+            font-size: 22px;
+            margin-bottom: 20%;
+        }
+
+        .nav-five {
+            width: 85vw;
+            height: 5vh;
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .link-one {
+            width: 88vw;
+            height: 2.4vh;
+            background-color: white;
+        }
+
+        .link-two {
+            width: 88vw;
+            height: 0.20vh;
+            background-color: black;
+        }
+
+        .link-three {
+            width: 88vw;
+            height: 2.4vh;
+            background-color: white;
+        }
+
+        /* page image */
+
+        .page-image {
+            width: 100vw;
+            height: 90vh;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            gap: 1.6vw;
+        }
+
+        .link-four {
+            width: 18vw;
+            height: 90vh;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            margin-left: 1%;
+
+        }
+
+        .link-1 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/brennan-mcgrath/8a82b0dd01-1751989842/combo-headshots_0618250275-1-366x549-crop-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .link-2 {
+            width: 18vw;
+            height: 30vh;
+            background-color: white;
+        }
+
+
+
+
+        .link-five {
+            width: 18vw;
+            height: 90vh;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .link-3 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/julian-herbst/827399e440-1754692532/me_full-366x549-crop-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .link-4 {
+            width: 18vw;
+            height: 30vh;
+            background-color: white;
+        }
+
+
+
+
+        .link-six {
+            width: 18vw;
+            height: 90vh;
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .link-5 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/alex-khomutov/a90f10c547-1749600107/img_3240-366x549-crop-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .link-6 {
+            width: 18vw;
+            height: 30vh;
+            background-color: white;
+        }
+
+
+
+        .link-seven {
+            width: 18vw;
+            height: 90vh;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .link-7 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/rauno-freiberg/c2daab0494-1751662321/rauno2-366x549-crop-48-6-39-2-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .link-8 {
+            width: 18vw;
+            height: 30vh;
+            background-color: white;
+        }
+
+        .link-eight {
+            width: 18vw;
+            height: 90vh;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .link-9 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/amelie-schluter/bd528b6d74-1751632298/2025-amelie-profile-closeup_v2-366x549-crop-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .link-10 {
+            width: 18vw;
+            height: 30vh;
+            background-color: white;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* page -2*/
+        .page-2 {
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-around;
+        }
+
+        .nav-1 {
+            width: 30vw;
+            height: 90vh;
+            background-color: blue;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/79b0b07b3e-1723031519/scout-712x890-crop-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .nav-2 {
+            width: 30vw;
+            height: 90vh;
+            background-color: green;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/8e1caa771f-1723031652/culture-ad-712x890-crop-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .nav-3 {
+            width: 30vw;
+            height: 90vh;
+            background-color: yellow;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/3a15143e02-1723031724/studios-ad-712x890-crop-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .nav-4 {
+            margin-top: 100%;
+            margin-left: 10%;
+            color: white;
+        }
+
+        .nav-5 {
+            margin-left: 10%;
+            color: white;
+            font-size: 25px;
+        }
+
+        /* page three*/
+        .page-3 {
+            width: 100vw;
+            height: 145vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .a-1 {
+            width: 100vw;
+            height: 5vh;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .a-3 {
+            width: 14vw;
+            height: 5vh;
+            background-color: white;
+            font-size: 24px;
+            margin-left: 3%;
+        }
+
+        .a-4 {
+            width: 80vw;
+            height: 5vh;
+        }
+
+        hr {
+            border-color: black;
+            text-align: center;
+            margin-top: 1%;
+        }
+
+
+        .a-2 {
+            width: 100vw;
+            height: 140vh;
+            background-color: burlywood;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .b-1 {
+            width: 27vw;
+            height: 140vh;
+            background-color: rgb(229, 158, 72);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .b-4 {
+            width: 25vw;
+            height: 35vh;
+            background-color: rgb(229, 158, 72);
+        }
+
+        .b-6 {
+            width: 25vw;
+            height: 20vh;
+            background-color: rgb(229, 158, 72);
+            margin-left: 4%;
+            font-size: 18px;
+
+        }
+
+        .b-7 {
+            font-size: 95px;
+            margin-left: 20%;
+        }
+
+        .b-9 {
+            font-size: 95px;
+            margin-left: 30%;
+        }
+
+        .b-8 {
+            margin-left: 10%;
+        }
+
+        .b-5 {
+            width: 25vw;
+            height: 85vh;
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .c-1 {
+            width: 42vw;
+            height: 85vh;
+            background-color: rgb(229, 158, 72);
+        }
+
+        .c-2 {
+            width: 1vw;
+            height: 85vh;
+            background-color: black;
+        }
+
+        .c-3 {
+            width: 42vw;
+            height: 85vh;
+            background-color: rgb(229, 158, 72);
+        }
+
+        .b-2 {
+            width: 28vw;
+            height: 140vh;
+            background-color: bisque;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/ryan-fan/de4e2c0830-1741470772/headshot-4x5-732x1464-crop-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .b-3 {
+            width: 45vw;
+            height: 140vh;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-around;
+        }
+
+        .d-1 {
+            width: 20vw;
+            height: 140vh;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .e-1 {
+            width: 20vw;
+            height: 70vh;
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .f-1 {
+            width: 20vw;
+            height: 40vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/ethan-chng/07e033d0d2-1745259721/portrait_main-366x366-crop-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items: center;
+        }
+
+        .f-2 {
+            width: 20vw;
+            height: 30vh;
+            background-color: white;
+        }
+
+        .e-2 {
+            width: 20vw;
+            height: 70vh;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .f-3 {
+            width: 20vw;
+            height: 40vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/andrey-rybin/30d46e50c3-1743313008/img_9639-kopija-366x366-crop-42-2-17-5-q90.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .f-4 {
+            width: 20vw;
+            height: 30vh;
+            background-color: white;
+        }
+
+        .d-2 {
+            width: 20vw;
+            height: 140vh;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .g-1 {
+            width: 20vw;
+            height: 70vh;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .h-1 {
+            width: 20vw;
+            height: 40vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/andrea-pacheco/229c4fbb03-1746055185/dedeialn-366x366-crop-q90.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .h-2 {
+            width: 20vw;
+            height: 30vh;
+            background-color: white;
+        }
+
+        .g-2 {
+            width: 20vw;
+            height: 70vh;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .h-3 {
+            width: 20vw;
+            height: 40vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/barbara-lopez/7a3e970d3e-1743785370/barbara-366x366-crop-q90.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .h-4 {
+            width: 20vw;
+            height: 30vh;
+            background-color: white;
+        }
+
+        /* page-4*/
+        .page-4 {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .i-1 {
+            width: 100vw;
+            height: 10vh;
+            background-color: white;
+        }
+
+        .i-2 {
+            width: 100vw;
+            height: 90vh;
+            background-color: white;
+        }
+
+        table {
+            width: 95vw;
+            height: 90vh;
+            border-collapse: collapse;
+            border-color: black;
+        }
+
+        .i-3 {
+            width: 19vw;
+            height: 90vh;
+            font-size: 60px;
+
+        }
+
+        .i-5 {
+            width: 10vw;
+            height: 45vh;
+        }
+
+        .j-1 {
+            margin-left: 30%;
+        }
+
+        .j-2 {
+            width: 17vw;
+            margin-left: 5%;
+        }
+
+        .j-3 {
+            margin-left: 5%;
+        }
+
+        .j-4 {
+            margin-left: 5%;
+        }
+
+
+
+
+
+
+        .i-6 {
+            width: 10vw;
+            height: 45vh;
+        }
+
+        .i-7 {
+            width: 10vw;
+            height: 45vh;
+        }
+
+        .i-8 {
+            width: 10vw;
+            height: 45vh;
+        }
+
+        .i-9 {
+            width: 10vw;
+            height: 45vh;
+        }
+
+        .i-10 {
+            width: 10vw;
+            height: 45vh;
+        }
+
+        .i-11 {
+            width: 10vw;
+            height: 45vh;
+        }
+
+        .i-12 {
+            width: 10vw;
+            height: 45vh;
+        }
+
+        /*page-5 */
+        .page-5 {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .l-1 {
+            width: 100vw;
+            height: 5vh;
+        }
+
+        .l-2 {
+            width: 100vw;
+            height: 95vh;
+            display: flex;
+            flex-direction: row;
+            gap: 2vw;
+        }
+
+        .k-1 {
+            width: 18vw;
+            height: 100vh;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .m-1 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/zeno-kapitein/9cb26e0a4a-1704123845/zeno-kapitein-366x549-crop-q90.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .m-2 {
+            width: 18vw;
+            height: 40vh;
+            background-color: white;
+        }
+
+        .k-2 {
+            width: 18vw;
+            height: 100vh;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .m-3 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/sancho-sancho/78b6ea7cff-1704123848/sancho-sancho-366x549-crop-q90.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .m-4 {
+            width: 18vw;
+            height: 40vh;
+            background-color: white;
+        }
+
+        .k-3 {
+            width: 18vw;
+            height: 100vh;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .m-5 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/sergey-lisovskiy/8339b257d2-1749207047/sergey-lisovskiy-portrait-366x549-crop-47-7-30-3-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .m-6 {
+            width: 18vw;
+            height: 40vh;
+            background-color: white;
+        }
+
+
+
+        .k-4 {
+            width: 18vw;
+            height: 100vh;
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .m-7 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/dann-petty/448e3f4a87-1704123856/dann-petty-1-366x549-crop-x-0-5-y-0-5-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .m-8 {
+            width: 18vw;
+            height: 40vh;
+            background-color: white;
+        }
+
+        .k-5 {
+            width: 18vw;
+            height: 100vh;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .m-9 {
+            width: 18vw;
+            height: 50vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/cat-noone/3ce8d1c0d8-1704123840/cat-noone-366x366-crop-x-0-5-y-0-5-q90.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .m-10 {
+            width: 18vw;
+            height: 50vh;
+            background-color: white;
+        }
+
+       
+       
+        .page-6 {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+           gap: 120px;
+        }
+
+        .n-1 {
+            width: 18vw;
+            height: 100vh;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .o-1 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/faris-kassim/f4ac489519-1704123864/faris-kassim-366x549-crop-27-8-52-7-q90.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .o-2 {
+            width: 18vw;
+            height: 40vh;
+            background-color: white;
+        }
+
+        .n-2 {
+            width: 18vw;
+            height: 100vh;
+            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .o-3 {
+            width: 18vw;
+            height: 40vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/ankur-chauhan/c07afc4046-1704123844/ankur-chauhan-366x366-crop-q90.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .o-4 {
+            width: 18vw;
+            height: 60vh;
+            background-color: white;
+        }
+
+        .n-3 {
+            width: 18vw;
+            height: 100vh;
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .o-5 {
+            width: 18vw;
+            height: 40vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/budi-tanrim/f84c5b382d-1704123838/budi-tanrim-366x366-crop-x-0-5-y-0-5-q90.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .o-6 {
+            width: 18vw;
+            height: 60vh;
+            background-color: white;
+        }
+
+        .n-4 {
+            width: 18vw;
+            height: 100vh;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .o-7 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/saga-lundqvist/7d4b1b14d5-1704123863/saga-lundqvist-366x549-crop-46-0-34-8-q90.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .o-8 {
+            width: 18vw;
+            height: 40vh;
+            background-color: white;
+        }
+
+        .n-5 {
+            width: 18vw;
+            height: 100vh;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .o-9 {
+            width: 18vw;
+            height: 60vh;
+            background-color: red;
+            background-image: url('https://spaces.is/media/pages/loversmagazine/interviews/adrian-mato/48cfe71dc1-1704123842/adrian-mato-366x549-crop-q90.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .o-10 {
+            width: 18vw;
+            height: 40vh;
+            background-color: white;
+        }
+
+        /*page-7*/
+        @media( min-width:300px )
+        .page-7 {
+            width: 100vw;
+            height: 140vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .p-1 {
+            width: 100vw;
+            height: 70vh;
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .q-1 {
+            width: 70vw;
+            height: 70vh;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            gap: 2vw;
+        }
+
+        .n-1 {
+            width: 12vw;
+            height: 70vh;
+            background-color: black;
+        }
+
+        .r-1 {
+            margin-left: 20%;
+            color: white;
+        }
+
+        .r-2 {
+            margin-left: 20%;
+            color: white;
+            font-size: 20px;
+        }
+
+        .n-2 {
+            width: 12vw;
+            height: 70vh;
+            background-color: black;
+        }
+
+        .n-3 {
+            width: 12vw;
+            height: 70vh;
+            background-color: black;
+        }
+
+        .n-4 {
+            width: 12vw;
+            height: 70vh;
+            background-color: black;
+        }
+
+        .n-5 {
+            width: 12vw;
+            height: 70vh;
+            background-color: black;
+        }
+
+        .q-2 {
+            width: 30vw;
+            height: 70vh;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            padding: 3%;
+            gap: 3vh;
+        }
+
+        .s-1 {
+            width: 24vw;
+            height: 50vh;
+            background-color: black;
+        }
+
+        .s-2 {
+            width: 24vw;
+            height: vh;
+            background-color: white;
+            border-radius: 25px;
+           
+        }
+        .v-2{
+            text-align: center;
+        }
+
+        .t-1 {
+            font-size: 23px;
+            color: white;
+
+        }
+
+        .t-2 {
+            font-size: 44px;
+            color: white;
+        }.t-3{
+            font-size: 23px;
+            color: white;
+        }
+
+        .p-2 {
+            width: 100vw;
+            height: 70vh;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!--header-->
+        <div class="header">
+            <div class="heading-one">Lovers Magazine</div>
+            <div class="heading-two"><span class="nav-one">Home</span>
+                <span class="nav-two">Interview</span>
+                <span class="nav-three">Mixes</span>
+            </div>
+        </div>
+        <!--home-->
+        <div class="home">
+            <div class="box-1">
+                <div class="box-one">
+                    <span class="name">LEENA</span> <br>
+                    <span class="name">MURDESHWAR</span>
+                </div>
+                <div class="box-two">
+                    <div class="box-3">
+                        <div class="box-three">Leena is a New York–based visual <br> designer and storyteller, weaving
+                            <br> bold
+                            cultural roots, thoughtful <br> strategy, and everyday play into her <br> work.
+                        </div>
+                        <div class="box-four">
+                            <span class="name-one">No.610</span>
+                            ------------------------------------------------
+                            <span class="name-two">Read Interview</span>
+                        </div>
+                    </div>
+                    <div class="box-4"></div>
+                </div>
+            </div>
+            <div class="box-2"></div>
+        </div>
+    </div>
+    <!--page-1-->
+    <div class="page-1">
+        <div class="page-heading">
+            <div class="nav-four">Recent Interviews
+            </div>
+            <div class="nav-five">
+                <div class="link-one"></div>
+                <div class="link-two"></div>
+                <div class="link-three"></div>
+            </div>
+        </div>
+        <div class="page-image">
+            <div class="link-four">
+                <div class="link-1"></div>
+                <div class="link-2">Founder <h3>Brennan McGrath — Combo</h3>
+                    <p>Brennan McGrath is a Partner at Combo, an independent strategy, design, and creative office in
+                        New York City.</p>
+                </div>
+            </div>
+            <div class="link-five">
+                <div class="link-3"></div>
+                <div class="link-4">Product Designer <h3>Julian Herbst — Attio</h3>
+                    <p>Julian Herbst is a German product designer creating digital experiences and brand identities for
+                        startups and wide …</p>
+                </div>
+            </div>
+            <div class="link-six">
+                <div class="link-5"></div>
+                <div class="link-6">Product Designer<h3>Alex Khomutov he/him — Ford Motor Company</h3>
+                    <p>Alex Khomutov is a Ukrainian Digital Product Designer currently living in Los Angeles and
+                        designing the future of …</p>
+                </div>
+            </div>
+            <div class="link-seven">
+                <div class="link-7"></div>
+                <div class="link-8">Design Engineer<h3>Rauno Freiberg — Vercel</h3>
+                    <p>Rauno Freiberg is an Estonian interaction designer. He currently works as a Staff Design Engineer
+                        at Vercel and was …</p>
+                </div>
+            </div>
+            <div class="link-eight">
+                <div class="link-9"></div>
+                <div class="link-10">Founder<h3>Amelie Schlüter — SPACING</h3>
+                    <p>Co-Founder of SPACING – a design venture studio creating a family of delightful AI software
+                        products and partnering …</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--page two-->
+    <div class="page-2">
+        <div class="nav-1">
+            <h1 class="nav-4">Scout</h1>
+            <p class="nav-5">connecting exceptional companies with <br>exceptional talent</p>
+        </div>
+        <div class="nav-2">
+            <h1 class="nav-4">Culture</h1>
+            <p class="nav-5">The Glassdoor alternative. A platform <br>that showcases the best companies</p>
+        </div>
+        <div class="nav-3">
+            <h1 class="nav-4">studio</h1>
+            <p class="nav-5">Browes and hire the perfect design <br>studio for your next project.</p>
+        </div>
+    </div>
+    <!--page three-->
+    <div class="page-3">
+        <div class="a-1">
+            <div class="a-3">Product Designer</div>
+            <div class="a-4">
+                <hr>
+            </div>
+        </div>
+        <div class="a-2">
+            <div class="b-1">
+                <div class="b-4"><span class="b-7">RYAN</span> <br><span class="b-9">FAN</span><br><span
+                        class="b-8">PRODUCT Designer AT CODE AND THEORY</span></div>
+                <div class="b-5">
+                    <div class="c-1"></div>
+                    <div class="c-2"></div>
+                    <div class="c-3"></div>
+                </div>
+                <div class="b-6">Ryan Fan is a New York-based product designer <br> and developer helping humans
+                    understand <br>
+                    machines better. He currently designs at Code <br> and Theory, and supports the design community
+                    <br> as an
+                    Awwwards jury and AIGA NY mentor.
+                </div>
+            </div>
+            <div class="b-2"></div>
+            <div class="b-3">
+                <div class="d-1">
+                    <div class="e-1">
+                        <div class="f-1"></div>
+                        <div class="f-2">Product Designer<h3>Ethan Chng — Instagram</h3>
+                            <p>Ethan Chng is a designer at Instagram focused on systems and interactions. He enjoys
+                                dreaming up ideas that solve …</p>
+                        </div>
+                    </div>
+                    <div class="e-2">
+                        <div class="f-3"></div>
+                        <div class="f-4">Product Designer<h3>Andrey Rybin — Human</h3>
+                            <p>Andrei Rybin is a Product and Industrial Designer, born in Lipetsk and based in Yerevan,
+                                with a focus on minimalism and …</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-2">
+                    <div class="g-1">
+                        <div class="h-1"></div>
+                        <div class="h-2">Product Designer<h3>Andrea Pacheco She/Her(s) — Instagram</h3>
+                            <p>Andrea Pacheco is a product designer passionate about building the future of social
+                                connection. With a background in …</p>
+                        </div>
+                    </div>
+                    <div class="g-2">
+                        <div class="h-3"></div>
+                        <div class="h-4">Product Designer<h3>Barbara Lopez She / Her — Squarespace</h3>
+                            <p>Barbara is a Venezuelan Product Designer based in New York, currently working on the
+                                Frontsite team at Squarespace.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--page-4-->
+    <div class="page-4">
+        <div class="i-1"></div>
+        <div class="i-2">
+            <table border="1">
+                <tr>
+                    <td rowspan="2" class="i-3">Mixes put <br> together <br> by your <br> favourite <br>designers.</td>
+                    <td class="i-5"><span class="j-3">DESSIGNER MIX</span> <span class="j-1">#610</span><img class="j-2"
+                            src="https://spaces.is/media/pages/loversmagazine/interviews/leena-murdeshwar/5041415605-1756421076/604.leena-murdeshwar-350x350-crop-q90.webp"
+                            alt=""><b class="j-4">Leena Murdeshwar</b></td>
+                    <td class="i-6"><span class="j-3">DESSIGNER MIX</span> <span class="j-1">#609</span><img class="j-2"
+                            src="https://spaces.is/media/pages/loversmagazine/interviews/brennan-mcgrath/6a5a7d204e-1754768360/603.brennan-mcgrath-350x350-crop-q90.webp"
+                            alt=""><b class="j-4">Brennan McGreth</b></td>
+                    <td class="i-7"><span class="j-3">DESSIGNER MIX</span> <span class="j-1">#608</span><img class="j-2"
+                            src="https://spaces.is/media/pages/loversmagazine/interviews/julian-herbst/3e2dab1186-1754691522/602.julian-herbst-350x350-crop-q90.webp"
+                            alt=""><b class="j-4">Julian Herbst</b></td>
+                    <td class="i-8"><span class="j-3">DESSIGNER MIX</span> <span class="j-1">#607</span><img class="j-2"
+                            src="https://spaces.is/media/pages/loversmagazine/interviews/alex-khomutov/1f14139277-1752068464/601.alex-khomutov-350x350-crop-q90.webp"
+                            alt=""><b class="j-4">Alex Khomutov</b></td>
+                </tr>
+                <tr>
+                    <td class="i-9"><span class="j-3">DESSIGNER MIX</span> <span class="j-1">#606</span><img class="j-2"
+                            src="https://spaces.is/media/pages/loversmagazine/interviews/rauno-freiberg/1b0fc4b625-1751999529/600.rauno-freiberg-350x350-crop-q90.webp"
+                            alt=""><b class="j-4">Rauno Freiberg</b></td>
+                    <td class="i-10"><span class="j-3">DESSIGNER MIX</span> <span class="j-1">#605</span><img
+                            class="j-2"
+                            src="https://spaces.is/media/pages/loversmagazine/interviews/amelie-schluter/09648cc77d-1751632350/599.amelie-schluter-350x350-crop-q90.webp"
+                            alt=""><b class="j-4">Amelie Schluter</b></td>
+                    <td class="i-11"><span class="j-3">DESSIGNER MIX</span> <span class="j-1">#604</span> <img
+                            class="j-2"
+                            src="https://spaces.is/media/pages/loversmagazine/interviews/benoit-lemoine/ed9bd97e1e-1751625163/598.benoit-lemoine-350x350-crop-q90.webp"
+                            alt=""><b class="j-3">Benoit Lemoine</b></td>
+                    <td class="i-12"><span class="j-3">DESSIGNER MIX</span> <span class="j-1">#603</span> <img
+                            class="j-2"
+                            src="https://spaces.is/media/pages/loversmagazine/interviews/ryan-fan/b1672c8ed8-1751479789/147192368864-350x350-crop-q90.webp"
+                            alt=""><b class="j-3">Ryan Fan</b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--page-5-->
+    <div class="page-5">
+        <div class="l-1"></div>
+        <div class="l-2">
+            <div class="k-1">
+                <div class="m-1"></div>
+                <div class="m-2">Product Designer<h3>Zeno Kapitein — Crisp</h3>
+                    <p>Here to create products that make me smile, and help you be your best self.</p>
+                </div>
+            </div>
+            <div class="k-2">
+                <div class="m-3"></div>
+                <div class="m-4">Artist<h3>Sancho Sancho — Freelance<p>Digital artist creating eccentric characters
+                            using vibrant colors, playful and experimental style highlighting …</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="k-3">
+                <div class="m-5"></div>
+                <div class="m-6">Digital Designer<h3>Sergey Lisovskiy — The studio of Sergey Lisovskiy</h3>
+                    <p>Since 2010, Sergey has been assisting companies, agencies, and individuals in crafting web
+                        experiences that truly …</p>
+                </div>
+            </div>
+            <div class="k-4">
+                <div class="m-7"></div>
+                <div class="m-8">Product Designer<h3>Dann Petty — Freelance</h3>
+                    <p>San Francisco based stay-at-home-dad freelance designer, Epicurrence event host, and story teller
+                        at Freelance.tv.</p>
+                </div>
+            </div>
+            <div class="k-5">
+                <div class="m-9"></div>
+                <div class="m-10">Product Designer<h3>Cat Noone — Iris</h3>
+                    <p>New Jersey-based designer, focused on building products with meaningful experiences and advocates
+                        for the little …</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--page-6-->
+    <div class="page-6">
+        <div class="n-1">
+            <div class="o-1"></div>
+            <div class="o-2">Founder <h3>Faris Kassim — OKOK Services</h3>
+                <p>Singaporean visual artist & creative coder currently based in Seoul. South Korea. Co-founder of
+                    independent …</p>
+            </div>
+        </div>
+        <div class="n-2">
+            <div class="o-3"></div>
+            <div class="o-4">Product Designer<h3>Ankur Chauhan — Auth0</h3>
+                <p>Based out of the south of France, Ankur is an interdisciplinary designer that likes to try a lot.
+                    Currently working as …</p>
+            </div>
+        </div>
+        <div class="n-3">
+            <div class="o-5"></div>
+            <div class="o-6">Product Designer<h3>Budi Tanrim — Shopify</h3>
+                <p>Budi is a multidisciplinary designer with a passion for using art, technology, and design to craft
+                    digital products …</p>
+            </div>
+        </div>
+        <div class="n-4">
+            <div class="o-7"></div>
+            <div class="o-8">Product Designer<h3>Saga Lundqvist — WeTransfer</h3>
+                <p>Saga Lundqvist is a Product Design Manager at WeTransfer. She is passionate about mobile design and
+                    is based in …</p>
+            </div>
+        </div>
+        <div class="n-5">
+            <div class="o-9"></div>
+            <div class="o-10">Product Designer<h3>Adrian Mato — GitHub</h3>
+                <p>Adrián is a Spanish Designer based in San Francisco, currently building tools for developers at
+                    GitHub. Don't forget to …</p>
+            </div>
+        </div>
+    </div>
+    <!--page-7-->
+    <div class="page-7">
+        <div class="p-1">
+            <div class="q-1">
+                <div class="n-1">
+                    <br><br><br>
+                    <h3 class="r-1"> Company</h3> <br>
+                    <span class="r-2">Home</span>
+                    <span class="r-2">About</span>
+                </div>
+                <div class="n-2">
+                    <br><br><br>
+                    <h3 class="r-1">Ecosystem</h3> <br>
+                    <span class="r-2">Culture</span>
+                    <span class="r-2">Lovers Magazine</span>
+                    <span class="r-2">Scout</span>
+                    <span class="r-2">Studios</span>
+                </div>
+                <div class="n-3"><br><br><br>
+                    <h3 class="r-1">Connect</h3> <br>
+                    <span class="r-2">Email</span>
+                    <span class="r-2">nstagram</span>
+                    <span class="r-2">X/Twitter</span>
+                </div>
+                <div class="n-4">
+                    <br><br><br>
+                    <h3 class="r-1">Legal</h3> <br>
+                    <span class="r-2">Privacy</span>
+                    <span class="r-2">Terms</span>
+                </div>
+                <div class="n-5"></div>
+            </div>
+            <div class="q-2">
+                <div class="s-1">
+                    <span class="t-1">Subscribe</span>
+                    <p class="t-2">Keep your <em>finger</em> on <em>the pulse.</em></p>
+                    <p class="t-3">A newsletter to uncover bright opportunities, connect with standout creatives, and explore
+                        stories shaping culture, design, and tech.</p>
+                </div>
+                <div class="s-2"><p class="v-2">Subcribe to pulse</p></div>
+            </div>
+        </div>
+        <div class="p-2"><svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1602 326">
+  <path d="M136.463 324.596C63.9858 324.596 7.03973 281.478 1 219.149l49.1807-8.538c2.5884 41.41 39.2583 71.721 87.1443 71.721 40.984 0 67.732-21.773 67.732-49.521 0-22.2-16.825-35.434-57.809-44.399l-45.298-9.819c-59.1033-13.234-86.2821-38.848-86.2821-81.9658C15.6679 40.7024 61.3973 1 126.109 1 184.78 1 230.51 35.5795 238.275 86.3814l-47.886 11.5265c-3.02-32.4449-29.336-54.6441-64.28-54.6441-34.9444 0-58.6719 19.2108-58.6719 46.106 0 22.6262 14.6679 34.5792 49.6119 42.6902l46.161 9.819c61.692 12.381 92.753 40.13 92.753 83.674 0 58.059-48.318 99.043-119.5 99.043ZM280.924 313.923V11.6727h130.717c66.869 0 114.755 39.7023 114.755 95.2003s-47.886 95.2-114.755 95.2h-80.242v111.85h-50.475Zm50.475-154.54h77.222c38.396 0 66.437-21.773 66.437-52.51 0-31.1643-27.178-52.9365-66.437-52.9365h-77.222V159.383ZM495.921 313.923 611.539 11.6727h62.123L788.848 313.923h-54.789L709.9 246.898H575.732l-25.022 67.025h-54.789Zm92.322-108.435h108.715L643.032 58.2055h-.863L588.243 205.488ZM940.903 324.596c-99.655 0-163.504-63.183-163.504-161.798C777.399 64.1822 837.796 1 931.843 1c69.457 0 122.517 41.41 136.327 106.727l-48.75 11.526c-8.2-44.825-41.416-73.4278-87.577-73.4278-62.554 0-102.675 45.6791-102.675 116.9728 0 71.72 44.435 117.399 111.735 117.399 55.221 0 95.777-35.433 104.397-90.504l49.18 10.246c-11.21 76.416-71.18 124.657-153.577 124.657ZM1119.54 313.923V11.6727h210.96v43.5445h-160.91v83.2468h143.66v40.556h-143.66v91.358h165.23v43.545h-215.28ZM1481.5 324.596c-72.48 0-129.42-43.118-135.46-105.447l49.18-8.538c2.59 41.41 39.26 71.721 87.14 71.721 40.99 0 67.73-21.773 67.73-49.521 0-22.2-16.82-35.434-57.81-44.399l-45.29-9.819c-59.11-13.234-86.29-38.848-86.29-81.9658C1360.7 40.7024 1406.43 1 1471.15 1c58.67 0 104.4 34.5795 112.16 85.3814l-47.88 11.5265c-3.02-32.4449-29.34-54.6441-64.28-54.6441-34.95 0-58.68 19.2108-58.68 46.106 0 22.6262 14.67 34.5792 49.62 42.6902l46.16 9.819c61.69 12.381 92.75 40.13 92.75 83.674 0 58.059-48.32 99.043-119.5 99.043Z" stroke="#F5F5F5"></path>
+</svg></div>
+    </div>
+
+</body>
+
+</html>

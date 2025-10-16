@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+          
+        }
+
+        .box-one {
+            background-color: red;
+           grid-row: span 3;
+
+
+        }
+
+        .box-two {
+            background-color: green;
+            grid-column: span 3;
+
+        }
+
+        .box-three {
+            background-color: gray;
+            grid-column: span 2;
+        }
+        .box-four{
+            background-color: blue;
+        }
+        .box-five{
+            background-color: blueviolet;
+        }
+
+        .box-6{
+            background-color: pink;
+        grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="box-one">1</div>
+        <div class="box-two">2</div>
+        <div class="box-three">4</div>
+        <div class="box-four">5</div>
+        <div class="box-five">56</div>
+        <div class="box-6">90</div>
+     </div>
+</body>
+
+</html>

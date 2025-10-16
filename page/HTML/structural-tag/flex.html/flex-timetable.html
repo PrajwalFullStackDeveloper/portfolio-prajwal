@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>flex</title>
+    <style>
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /*heading one*/
+        .header-one {
+            width: 100vw;
+            height: 8vh;
+            background-color: midnightblue;
+            display: flex;
+            flex-direction: row;
+            padding-top: 1%;
+            border-radius: 2px;
+        }
+
+        .heading-one {
+            width: 45px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: white;
+            text-align: center;
+            padding-top: 1%;
+            margin-left: 5%;
+
+        }
+
+        .heading-two {
+            width: 70vw;
+            height: 7vh;
+            background-color: midnightblue;
+            margin-left: 1%;
+            color: white;
+        }
+
+        .name {
+            font-size: 23px;
+        }
+
+        /* table box*/
+        .table-box {
+            width: 100vw;
+            height: 75vh;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            gap: 5vw;
+        }
+
+        .box-one {
+            width: 70vw;
+            height: 75vh;
+            background-color: white;
+        }
+
+        table {
+            width: 70vw;
+            height: 66vh;
+            border-collapse: collapse;
+            margin-left: 2%;
+        }
+
+        .name-two {
+            font-size: 22px;
+            margin-left: 2%;
+        }
+
+        hr {
+            margin-left: 2%;
+            border-color: aqua;
+        }
+
+        /*table-one*/
+        .nav-one {
+            background-color: midnightblue;
+            text-align: center;
+            color: white;
+        }
+
+        .nav-two {
+            background-color: rgb(135, 228, 197);
+            text-align: center;
+        }
+        .nav-three{
+            text-align: center;
+        }
+        .nav-four{
+           background-color: antiquewhite;
+        }
+/*announcement*/
+        .box-two {
+            width: 25vw;
+            height: 75vh;
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .four-box{
+            width: 25vw;
+            height: 6vh;
+        }
+        .six-box{
+            width: 20vw;
+        }
+        .five-box
+        {
+            width: 25vw;
+            height: 65vh;
+             display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content:space-around;
+            gap: 2vh;
+        }
+        .one-box{
+            width: 20vw;
+            height: 20vh;
+            background-color:rgb(211, 171, 191);
+            margin-left: 2%;
+            border-left: solid 3px red;
+            border-radius: 5px;
+           
+        }
+        .two-box{
+            width: 20vw;
+            height: 20vh;
+            background-color: rgb(151, 200, 181);
+            margin-left: 2%;
+            border-left: 3px solid green;
+            border-radius: 5px;
+        }
+        .three-box{
+            width: 20vw;
+            height: 20vh;
+            background-color:rgb(127, 180, 180);
+            margin-left: 2%;
+            border-left: 3px solid blue;
+            border-radius: 5px;
+        }
+
+        .header-two {
+            width: 100vw;
+            height: 8vh;
+            background-color: midnightblue;
+            text-align: center;
+            color: white;
+           padding-top: 0.5%;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <!--heading-->
+        <div class="header-one">
+            <div class="heading-one">SHS</div>
+            <div class="heading-two"> <span class="name">Springfield High School </span><br><i>Learning for
+                    life,Excellence for all</i></div>
+        </div>
+        <!--table -->
+        <div class="table-box">
+            <div class="box-one"><span class="name-two"> weekly Time table </span>
+                <hr>
+                <table border="1">
+
+                    <!--table one-->
+                    <tr class="nav-one">
+                        <td>Time</td>
+                        <td>Monday</td>
+                        <td>Thuesday</td>
+                        <td>Wednesday</td>
+                        <td>Thursday</td>
+                        <td>Friday</td>
+                    </tr>
+                    <!--table two-->
+                    <tr class="nav-three">
+                        <td class="nav-two">8:00-8:45</td>
+                        <td>Mathematic</td>
+                        <td> Science</td>
+                        <td>English</td>
+                        <td>Hestory</td>
+                        <td>Physical education</td>
+                    </tr>
+                    <!--table three-->
+                    <tr  class="nav-three">
+                        <td class="nav-two">8:45-9:30</td>
+                        <td>Mathematic</td>
+                        <td> Science</td>
+                        <td>English </td>
+                        <td> History</td>
+                        <td>Physical education</td>
+                    </tr>
+                    <!--table four-->
+                    <tr  class="nav-three">
+                        <td class="nav-two">9:30-9:45</td>
+                        <td colspan="5" class="nav-four">Morning Brack</td>
+                    </tr>
+                    <!--table five-->
+                    <tr  class="nav-three">
+                        <td class="nav-two">9:45-10:30</td>
+                        <td>Geography</td>
+                        <td>Art</td>
+                        <td>Mathematic</td>
+                        <td>Music</td>
+                        <td>English</td>
+                    </tr>
+                    <!--table six-->
+                    <tr  class="nav-three">
+                        <td class="nav-two">10:30-11:15</td>
+                        <td>Geography</td>
+                        <td>Art</td>
+                        <td>Mathematic</td>
+                        <td>Music</td>
+                        <td>English</td>
+                    </tr>
+                    <!--table seven-->
+                    <tr  class="nav-three">
+                        <td class="nav-two">11:15-11:30</td>
+                        <td colspan="5" class="nav-four">Short Brack</td>
+                    </tr>
+                    <!--table eight-->
+                    <tr  class="nav-three">
+                        <td class="nav-two">11:30-12:15</td>
+                        <td>science</td>
+                        <td>Physical education</td>
+                        <td> English</td>
+                        <td> History</td>
+                        <td>Computer science</td>
+                    </tr>
+                    <!--table nine-->
+                    <tr  class="nav-three">
+                        <td class="nav-two">12:15-1:00</td>
+                        <td>science</td>
+                        <td>Physical education</td>
+                        <td>English</td>
+                        <td>History</td>
+                        <td>Computer science</td>
+                    </tr>
+                    <!--table ten-->
+                    <tr  class="nav-three">
+                        <td class="nav-two">1:00-2:00</td>
+                        <td colspan="5" class="nav-four"> Long Brack</td>
+                    </tr>
+                    <!--table eleven-->
+                    <tr  class="nav-three">
+                        <td class="nav-two">2:00-2:45</td>
+                        <td>Mathamatic</td>
+                        <td>Science</td>
+                        <td>Hestory</td>
+                        <td>Eglish</td>
+                        <td>Music</td>
+                    </tr >
+                    <!--table tewel-->
+                    <tr  class="nav-three">
+                        <td class="nav-two">2:45-3:00</td>
+                        <td>Mathamatic</td>
+                        <td>Science</td>
+                        <td>Hestory</td>
+                        <td>Eglish</td>
+                        <td>Music</td>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="box-two">
+                <div class="four-box"><span class="name-two">Announcement</span><hr class="six-box">
+                </div>
+                <div class="five-box">
+            <div class="one-box"> <h3>📚 Library closer</h3>  </div>
+            <div class="two-box"><h3>📆 Parent-Teacher Meeting </h3></div>
+            <div class="three-box"><h3>🏆 Sport day </h3></div>
+            </div>
+            </div>
+        </div>
+        <div class="header-two">
+         @ 2023 Springfield High School,All right reserved <br>contact: office@springfieldhigh.edu|phone:(555) 123-567
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>box-one</title>
+    <style>
+      .main-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+      }
+      .box-one {
+        width: 30vw;
+        height: 100vh;
+        background-color: brown;
+      }
+      .box-two {
+        width: 70vw;
+        height: 100vh;
+        background-color: rgb(42, 165, 58);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: end;
+        justify-content: end;
+      }
+      .two {
+        width: 70vw;
+        height: 50vh;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .nav-link{
+        width: 35vw;
+        height: 50vh;
+        background-color: chocolate;
+        display: flex;
+        flex-direction: column;
+
+      }
+      .highh{
+        width: 35vw;
+        height: 25vh;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="box-one"></div>
+      <div class="box-two">
+        <div class="one"></div>
+        <div class="two">
+          <div class="nav"></div>
+          <div class="nav-link">
+            <div class="high"></div>
+             <div class="highh"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

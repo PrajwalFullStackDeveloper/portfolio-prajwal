@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            overflow-x: hidden;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* maain container */
+        .main-container {
+            width: 100vw;
+            height: 400vh;
+        }
+
+        /* home page */
+        .home-page {
+
+            width: 100vw;
+            height: 100vh;
+            background-color: #090040;
+        }
+
+        /* header container */
+        .header-container {
+            width: 100vw;
+            height: 9vh;
+            background-color: #090040;
+            position: fixed;
+       
+        }
+
+        /* .portfolio name */
+        .portfolio {
+            font-size: 40px;
+            text-align: center;
+            align-content: center;
+            color: white;
+            margin-left: 6%;
+        }
+/* home */
+        .home {
+            font-size: 22px;
+            text-align: center;
+            align-content: center;
+            color: white;
+            margin-left: 50%;
+        }
+/* about */
+        .about {
+            font-size: 22px;
+            text-align: center;
+            align-content: center;
+            color: white;
+            margin-left: 5%;
+        }
+/* project */
+        .project {
+            font-size: 22px;
+            text-align: center;
+            align-content: center;
+            color: white;
+            margin-left: 5%;
+        }
+/* contact */
+        .contact {
+            font-size: 22px;
+            text-align: center;
+            align-content: center;
+            color: white;
+            margin-left: 5%;
+        }
+
+        /* home container */
+        .home-container {
+            width: 100vw;
+            height: 80vh;
+            background-color: #090040;
+         padding-top: 6%;
+        }
+
+        /* infomation */
+        .information {
+            width: 80vw;
+            height: 70vh;
+            background-color: #471396;
+            margin-top: 2%;
+            margin-left: 9%;
+            display: flex;
+            flex-direction: row;
+            color: white;
+        }
+
+        /* information- container */
+        .information-container {
+            width: 55vw;
+            height: 70vh;
+        }
+/* image container */
+        .image-container {
+            width: 25vw;
+            height: 70vh;
+            background-color: blue;
+            background-image: url('./assets/image/IMG_20220525_193337.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .self-name {
+            margin-left: 30%;
+            font-size: 40px;
+        }
+
+        .self-intro {
+            margin-left: 30%;
+            font-size: 30px;
+        }
+
+        .prajwal-intro {
+            margin-left: 24%;
+            font-size: 25px;
+        }
+
+        /* about page */
+        .about-page {
+            width: 100vw;
+            height: 100vh;
+            background-color: #090040;
+        }
+/*   .about-header */
+        .about-header {
+            font-size: 40px;
+            text-align: center;
+            align-content: center;
+            width: 100vw;
+            height: 10vw;
+            color: white;
+        }
+
+        /* about information */
+        .about-information {
+            width: 80vw;
+            height: 70vh;
+            background-color: white;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: row;
+        }
+/* information-about */
+        .information-about {
+            width: 55vw;
+            height: 70vh;
+            font-size: 30px;
+            background-color:  #471396;
+color: white;
+
+        }
+/*.about-image  */
+        .about-image {
+            width: 25vw;
+            height: 70vh;
+            background-image: url('./assets/image/prajwal\ passport.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* project-page */
+        .project-page {
+            width: 100vw;
+            height: 100vh;
+            background-color:#090040;
+        }
+        /*project-header  */
+        .project-header{
+            width: 100vw;
+            height: 20vh;
+            background-color:#090040;
+            font-size: 40px;
+            text-align: center;
+            align-content: center;
+            color: white;
+        }
+        /* live-project button */
+        .live-project{
+            width: 8vw;
+            height: 5vh;
+            border-radius: 25px;
+            background-color:#471396;
+            border: none;
+        }
+        /* project container */
+        .project-container{
+            width: 80vw;
+            height: 80vh;
+            background-color:#090040;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        /* project one */
+        .project-one{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .image-one{
+            width: 25vw;
+            height: 31vh;
+           background-image: url('https://images.stockcake.com/public/6/e/4/6e4481af-b066-47e0-b718-e51d6a64d5a1_large/illuminated-chess-set-stockcake.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        .information-one{
+            width: 25vw;
+            height: 7vh;
+            background-color:#090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project two */
+         .project-two{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        .image-two{
+            width: 25vw;
+            height: 31vh;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtecam8wFtyDv4qOQ2KJ0rcYoDOE0x_75XCg&s');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .information-two{
+            width: 25vw;
+            height: 7vh;
+            background-color: #090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project-three */
+         .project-three{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        .image-three{
+            width: 25vw;
+            height: 31vh;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/003/079/915/non_2x/school-timetable-rainbow-kid-design-of-planner-vector.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .information-three{
+            width: 25vw;
+            height: 7vh;
+            background-color: #090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project four */
+         .project-four{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        .image-four{
+            width: 25vw;
+            height: 31vh;
+            background-image: url('https://media.istockphoto.com/id/1475807645/vector/3d-calculator-with-floating-coin.jpg?s=612x612&w=0&k=20&c=JfBmUEbdWKrZaNH9VymbsiTv438YjLnt01SYWv5ENNA=');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .information-four{
+            width: 25vw;
+            height: 7vh;
+            background-color:#090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project five */
+         .project-five{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        .image-five{
+            width: 25vw;
+            height: 31vh;
+            background-image: url('https://themewagon.com/wp-content/uploads/2022/08/Frame-3736-2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .information-five{
+            width: 25vw;
+            height: 7vh;
+            background-color: #090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project six */
+         .project-six{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        .image-six{
+            width: 25vw;
+            height: 31vh;
+             background-image: url('https://i0.wp.com/sweettoothteaching.com/wp-content/uploads/2025/07/student-data-in-the-classroom.png?fit=1080%2C1080&ssl=1');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .information-six{
+            width: 25vw;
+            height: 7vh;
+            background-color:#090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project view button */
+        .product-button{
+            width: 8vw;
+            height: 6vh;
+            border-radius: 25px;
+            text-align: center;
+            align-content: center;
+            background-color: #471396;
+            border: none;
+        }
+
+        /* contact -page */
+        .contact-page {
+            width: 100vw;
+            height: 100vh;
+            background-color: #090040;
+            display: flex;
+            flex-direction: column;
+        }
+        /* contact header */
+        .contact-header{
+            width: 100vw;
+            height: 20vh;
+            font-size: 40px;
+            text-align: center;
+            align-content: center;
+            color: white;
+        }
+        /* contact container */
+        .contact-container{
+            width: 80vw;
+            height: 72vh;
+            background-color:#090040;
+            margin-left: 9%;
+             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: space-around;
+            row-gap: 6vh;
+        }
+        /* .contact-container-one */
+        .contact-container-one {
+            width: 22vw;
+            height: 30vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            transition: 0.8s, transform 0.8s;
+        }
+
+        .contact-container-one:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px red, 0 0 20px green
+        }
+/* .contact-image  */
+        .contact-image {
+            width: 22vw;
+            height: 15vh;
+            background-color: rgb(38, 24, 50);
+        }
+/* .contact-information  */
+        .contact-information {
+            width: 22vw;
+            height: 15vh;
+            background-color: rgb(33, 19, 46);
+            text-align: center;
+            font-size: 22px;
+            color: white;
+        }
+/*  .email-container */
+        .email-container {
+            width: 22vw;
+            height: 30vh;
+            background-color: white;
+              flex-direction: column;
+            transition: 0.8s, transform 0.8s;
+
+        }
+         .email-container:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px red, 0 0 20px green
+        }
+/*   .email-image  */
+        .email-image {
+            width: 22vw;
+            height: 15vh;
+            background-color: rgb(33, 19, 46);
+        }
+/*  .email-information */
+
+        .email-information {
+            width: 22vw;
+            height: 15vh;
+            background-color: rgb(33, 19, 46);
+            text-align: center;
+            font-size: 22px;
+            color: white;
+        }
+/*  .linkedin-container */
+        .linkedin-container {
+            width: 22vw;
+            height: 30vh;
+            background-color: rgb(34, 23, 45);
+              flex-direction: column;
+            transition: 0.8s, transform 0.8s;
+        }
+         .linkedin-container:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px red, 0 0 20px green
+        }
+/* .linkedin-image */
+        .linkedin-image {
+            width: 22vw;
+            height: 15vh;
+            background-color: rgb(37, 23, 50);
+        }
+/* .linkedin-information */
+        .linkedin-information {
+            width: 22vw;
+            height: 15vh;
+            background-color: rgb(33, 19, 46);
+            text-align: center;
+            font-size: 22px;
+            color: white;
+        }
+/*  .github-container  */
+        .github-container {
+            width: 22vw;
+            height: 30vh;
+            background-color: rgb(34, 23, 45);
+              flex-direction: column;
+            transition: 0.8s, transform 0.8s;
+
+        }
+         .github-container:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px red, 0 0 20px green
+        }
+/*  .github-image */
+        .github-image {
+            width: 22vw;
+            height: 15vh;
+            background-color: rgb(34, 23, 45);
+        }
+/* .github-information */
+        .github-information {
+            width: 22vw;
+            height: 15vh;
+            background-color: rgb(34, 23, 45);
+            text-align: center;
+            font-size: 22px;
+            color: white;
+        }
+/*   .image-contact class of images */
+        .image-contact {
+            margin-top: 10%;
+            margin-left: 42%;
+        }
+         /* .footer */
+    .footer{
+        width: 100vw;
+        height: 10vh;
+      
+        text-align: center;
+        font-size: 22px;
+        align-content: center;
+        background-color:#090040;
+        color: white;
+    }
+    a{
+        text-decoration: none;
+       color: white;
+    }
+    @media( min-width:320px) and ( max-width:432px) {
+         html{
+            scroll-behavior: smooth;
+        }
+        body {
+            overflow-x: hidden;
+           
+        }
+
+        /* maain container */
+        .main-container {
+            width: 100vw;
+            height: auto;
+        }
+
+        /* home page */
+        .home-page {
+
+            width: 100vw;
+            
+            background-color: #090040;
+        }
+
+        /* header container */
+        .header-container {
+            width: 100vw;
+           
+            background-color: #090040;
+            position: fixed;
+       
+        }
+
+        /* .portfolio name */
+        .portfolio {
+            font-size: 18px;
+            text-align: center;
+            align-content: center;
+            color: white;
+            
+        }
+/* home */
+        .home {
+            font-size: 10px;
+            text-align: center;
+            align-content: center;
+            color: white;
+            margin-left:6%;
+          
+            
+        }
+/* about */
+        .about {
+            font-size: 10px;
+            text-align: center;
+            align-content: center;
+            color: white;
+           
+        }
+/* project */
+        .project {
+            font-size: 10px;
+            text-align: center;
+            align-content: center;
+            color: white;
+           
+        }
+/* contact */
+        .contact {
+            font-size: 10px;
+            text-align: center;
+            align-content: center;
+            color: white;
+           
+        }
+
+        /* home container */
+        .home-container {
+            width: 100vw;
+            height: 80vh;
+            background-color: #090040;
+         padding-top: 6%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="main-container">
+        <!-- home-page container -->
+        <div class="home-page">
+            <!-- header container on top  -->
+            <div class="header-container">
+                <span class="portfolio">Portfolio</span>
+                <span class="home"><a href="#Home">Home </a></span>
+                <span class="about"><a href="#About">About</a></span>
+                <span class="project"><a href="#Project">Project</a></span>
+                <span class="contact"><a href="#Contact">Contact</a></span>
+            </div>
+            <!-- home container down side -->
+            <div class="home-container" id="Home">
+                <!-- inside home container information container  devid container in to two part-->
+                <div class="information">
+                    <!-- one part is information-container -->
+                    <div class="information-container"> <br><br> <br><br><br><span class="self-name">Hi,I'm Prajwal
+                            Nakade
+
+                        </span> <br><br> <br> <br>
+                        <span class="self-intro">I am full stack web developer</span> <br> <br><br>
+                        <span class="prajwal-intro">Hi! I’m Prajwal Nakade passionate Front-End</span> <br><span
+                            class="prajwal-intro">Developer with strong expertise in HTML and CSS.</span>
+                    </div>
+                    <!-- second part is image container -->
+                    <div class="image-container"></div>
+                </div>
+            </div>
+        </div>
+        <!-- about page -->
+        <div class="about-page" id="About">
+            <!-- about container in top side -->
+            <div class="about-header">About</div>
+            <!-- about-information container in down side devid in to two part -->
+            <div class="about-information"> 
+                <!-- one part is information-about  -->
+                <div class="information-about">  <br><br><br>  I am Prajwal Nakade Full Stack Developer trainee. I have completed 
+                    learning HTML and CSS, which are the basic building blocks of web development. HTML helps me create 
+                    the structure of web pages, and CSS helps me style and design them to look attractive and 
+                    user-friendly. Now, I am moving forward to learn more advanced languages and technologies to build 
+                    complete websites and web applications. My goal is to become a skilled Full Stack Developer who can 
+                    handle both frontend and backend development.</div>
+                    <!-- second part is about-image container -->
+                <div class="about-image"></div>
+            </div>
+        </div>
+        <!-- project-page  container-->
+        <div class="project-page" id="Project">
+            <!-- project header container on top -->
+            <div class="project-header">Project <br> <button class="live-project"><a href="../live-project/index.html">live project</button></a></div>
+            <!-- project-container down side -->
+            <div class="project-container">
+                <!-- project-one container -->
+                <div class="project-one">
+                    <div class="image-one"></div>
+                    <div class="information-one">
+                        <button class="product-button"><a href="./page/HTML/structural-tag/grid/chess-grid.html">Chess</button> </a>
+                    </div>
+                    
+                </div>
+                <!-- project two container -->
+                <div class="project-two">
+                     <div class="image-two"></div>
+                    <div class="information-two">  <button class="product-button"><a href="./page/HTML/form-tages/form-teg.html">Form</button></a></div>
+                </div>
+                <!-- project three container -->
+                <div class="project-three">
+                     <div class="image-three"></div>
+                    <div class="information-three">
+                         <button class="product-button"><a href="./page/HTML/structural-tag/flex.html/flex-timetable.html">ime Table</button></a>T
+                    </div>
+                </div>
+                <!-- project four container -->
+                <div class="project-four">
+                     <div class="image-four"></div>
+                    <div class="information-four">
+                         <button class="product-button"><a href="./page/HTML/table-tages/calculetor.html">Claculator</button></a>
+                    </div>
+                </div>
+                <!-- project five container -->
+                <div class="project-five">
+                     <div class="image-five"></div>
+                    <div class="information-five">
+                         <button class="product-button"><a href="./page/HTML/structural-tag/flex.html/flex-div.html">Flex</button></a>
+                    </div>
+                </div>
+                <!-- project six container -->
+                <div class="project-six">
+                     <div class="image-six"></div>
+                    <div class="information-six"> <button class="product-button"><a href="./page/HTML/table-tages/student.html  ">Data</button></a></div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- contact page -->
+        <div class="contact-page" id="Contact">
+            <!-- contact header container -->
+            <div class="contact-header">Contact</div>
+            <!-- contact- container -->
+            <div class="contact-container">
+                
+                    <!-- contact container one -->
+                    <div class="contact-container-one">
+                        <div class="contact-image"><img class="image-contact"
+                                src="https://cdn-icons-png.flaticon.com/512/5328/5328057.png" width="50vw"
+                                height="50vw"></div>
+                                <!-- ontact-information -->
+                        <div class="contact-information"><span>Contact</span><br><span>6261738534</span></div>
+                    </div>
+                    <!--email-container  -->
+                    <div class="email-container">
+                        <div class="email-image"> <img class="image-contact"
+                                src="https://cdn-icons-png.flaticon.com/512/2250/2250206.png" width="50vw" height="50vw"
+                                alt=""></div>
+                                <!-- email-information -->
+                        <div class="email-information"><span>Email</span> <br><span>prajwalnakade8759@gmail.com</span>
+                        </div>
+                    </div>
+                    <!-- linkedin-container -->
+                    <div class="linkedin-container">
+                        <div class="linkedin-image"><img class="image-contact"
+                                src="https://pngimg.com/d/linkedIn_PNG27.png" width="50vw" height="50vw"></div>
+                                <!-- linkedin-information -->
+                        <div class="linkedin-information">
+                            <span>Linkedin</span> <br><span>Prajwal Nakade</span>
+                        </div>
+                    </div>
+                    <!-- github-container -->
+                    <div class="github-container">
+                        <div class="github-image"><img class="image-contact"
+                                src="https://img.icons8.com/ios11/512/228BE6/github.png" width="50vw" height="50vw"
+                                alt=""></div>
+                                <!-- github-information -->
+                        <div class="github-information"> <span>Github</span> <br><span>PrawalFullstackDeveloper</span>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <!-- footer container -->
+          <div class="footer">© 2025 Prajwal Nakade. All Rights Reserved.</div>
+    </div>
+ 
+</body>
+
+</html>
