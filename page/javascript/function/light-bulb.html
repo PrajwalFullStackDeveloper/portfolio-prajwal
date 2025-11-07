@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light bulb</title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 80vw;
+            height: 80vh;
+            background-color: bisque;
+        }
+        button{
+            width: 8vw;
+            height: 4vh;
+        }
+        img{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+  <div class="main-container">
+    <!-- image container -->
+    <div class="container" id="display">
+        <img id="bulb-1"  src="../../assets/image/bulb off.png" width="400px" height="400px">
+        <img  id="bulb-2" src="../../assets/image/light bulb on.png"  width="400px" height="400px">
+    </div>
+    <!-- button  -->
+     <button onclick="bulbon()" >ON</button> 
+  <button onclick="bulboff()" >Off</button>
+
+  </div>
+ 
+</body>
+<script>
+    // bulb on 
+    function bulbon(){
+        document.getElementById("bulb-1").style.display="none";
+document.getElementById("bulb-2").style.display="block"
+    }
+    // bulb off
+      function bulboff(){
+        document.getElementById("bulb-1").style.display="block";
+document.getElementById("bulb-2").style.display=" none"
+    }
+</script>
+
+</html>

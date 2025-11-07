@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week day </title>
+    <style>
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80vw;
+            height: 90vh;
+            margin-left: 10%;
+
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .display-container {
+            width: 80vw;
+            height: 60vh;
+            background-color: antiquewhite;
+        }
+
+        .day-container {
+            width: 80vw;
+            height: 30vh;
+            background-color: aquamarine;
+        }
+        button{
+            width: 10vw;
+            height: 8vh;
+            border-radius: 10px;
+        }
+   p{
+            font-size: 40px;
+           text-align: center;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="display-container" id="display-container" >
+                <p >Welcome to universal calander</p>
+                <p id="display"></p>
+            </div>
+            <div class="day-container" id="day-container">
+                <button id="input" onclick="sunday()"> sunday</button>
+                <button id="input-one" onclick="monday()"> Monday</button>
+                <button id="input-two" onclick="tuesday()"> Tuesday</button>
+                <button id="input-three" onclick="wednesday()"> Wednesday</button>
+                <button id="input-four" onclick=" thursday()"> Thursday</button>
+                <button id="input-five" onclick="friday()"> Friday</button>
+                <button id="input-six" onclick="saturday()"> Saturday</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function sunday(){
+        document.getElementById("day-container").style.backgroundColor="#658C58";
+        document.getElementById("display-container").style.backgroundColor="#4A70A9";
+        document.getElementById("input").style.backgroundColor="#001BB7";
+        document.getElementById("display").innerHTML="Today is sunday";
+    }
+     function monday(){
+         document.getElementById("day-container").style.backgroundColor="#F9B487";
+        document.getElementById("display-container").style.backgroundColor="#427A76";
+       document.getElementById("input-one").style.backgroundColor="#0C2B4E";
+        document.getElementById("display").innerHTML="Today is Monday";
+    }
+     function tuesday(){
+          document.getElementById("day-container").style.backgroundColor="#CFADC1";
+        document.getElementById("display-container").style.backgroundColor="#F4F754";
+        document.getElementById("input-two").style.backgroundColor="#F87B1B";
+        document.getElementById("display").innerHTML="Today is Tuesday";
+    }
+     function wednesday(){
+          document.getElementById("day-container").style.backgroundColor="#F87B1B";
+        document.getElementById("display-container").style.backgroundColor="#CD2C58";
+        document.getElementById("input-three").style.backgroundColor="#C2E2FA";
+        document.getElementById("display").innerHTML="Today is Wednesday";
+    }
+     function thursday(){
+          document.getElementById("day-container").style.backgroundColor="#132440";
+        document.getElementById("display-container").style.backgroundColor="#9B5DE0";
+      document.getElementById("input-four").style.backgroundColor="#5C3E94";
+        document.getElementById("display").innerHTML="Today is Thursday";
+    }
+     function friday(){
+        document.getElementById("day-container").style.backgroundColor="#3E1E68";
+        document.getElementById("display-container").style.backgroundColor="#344F1F";
+       document.getElementById("input-five").style.backgroundColor="#BF092F";
+        document.getElementById("display").innerHTML="Today is Friday";
+    }
+     function saturday(){
+        document.getElementById("day-container").style.backgroundColor="#640D5F";
+        document.getElementById("display-container").style.backgroundColor="#9112BC";
+        document.getElementById("input-six").style.backgroundColor="#E62727";
+        document.getElementById("display").innerHTML="Today is Saturday";
+    }
+       
+</script>
+</html>

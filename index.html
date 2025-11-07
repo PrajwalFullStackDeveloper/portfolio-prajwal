@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project</title>
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
         }
+
         body {
             overflow-x: hidden;
             margin: 0%;
@@ -18,7 +19,7 @@
         /* maain container */
         .main-container {
             width: 100vw;
-            height: 400vh;
+            height: 370vh;
         }
 
         /* home page */
@@ -35,7 +36,7 @@
             height: 9vh;
             background-color: #090040;
             position: fixed;
-       
+
         }
 
         /* .portfolio name */
@@ -46,7 +47,8 @@
             color: white;
             margin-left: 6%;
         }
-/* home */
+
+        /* home */
         .home {
             font-size: 22px;
             text-align: center;
@@ -54,7 +56,8 @@
             color: white;
             margin-left: 50%;
         }
-/* about */
+
+        /* about */
         .about {
             font-size: 22px;
             text-align: center;
@@ -62,7 +65,8 @@
             color: white;
             margin-left: 5%;
         }
-/* project */
+
+        /* project */
         .project {
             font-size: 22px;
             text-align: center;
@@ -70,7 +74,8 @@
             color: white;
             margin-left: 5%;
         }
-/* contact */
+
+        /* contact */
         .contact {
             font-size: 22px;
             text-align: center;
@@ -84,7 +89,7 @@
             width: 100vw;
             height: 80vh;
             background-color: #090040;
-         padding-top: 6%;
+            padding-top: 6%;
         }
 
         /* infomation  */
@@ -104,7 +109,8 @@
             width: 55vw;
             height: 70vh;
         }
-/* image container */
+
+        /* image container */
         .image-container {
             width: 25vw;
             height: 70vh;
@@ -114,16 +120,19 @@
             background-size: cover;
         }
 
+        /* self - name */
         .self-name {
             margin-left: 30%;
             font-size: 40px;
         }
 
+        /* self intro */
         .self-intro {
             margin-left: 30%;
             font-size: 30px;
         }
 
+        /* prajwal intoduction */
         .prajwal-intro {
             margin-left: 24%;
             font-size: 25px;
@@ -135,7 +144,8 @@
             height: 100vh;
             background-color: #090040;
         }
-/*   .about-header */
+
+        /*   .about-header */
         .about-header {
             font-size: 40px;
             text-align: center;
@@ -145,7 +155,7 @@
             color: white;
         }
 
-        /* about information */
+        /* about information container */
         .about-information {
             width: 80vw;
             height: 70vh;
@@ -154,16 +164,22 @@
             display: flex;
             flex-direction: row;
         }
-/* information-about */
+
+        /* information-about */
         .information-about {
             width: 55vw;
             height: 70vh;
             font-size: 30px;
-            background-color:  #471396;
-color: white;
+            background-color: #471396;
+            color: white;
 
         }
-/*.about-image  */
+
+        .prajwal-information {
+            margin-left: 12%;
+        }
+
+        /*.about-image  container */
         .about-image {
             width: 25vw;
             height: 70vh;
@@ -172,185 +188,149 @@ color: white;
             background-size: cover;
         }
 
-        /* project-page */
+        /* project-page main container */
         .project-page {
             width: 100vw;
-            height: 100vh;
-            background-color:#090040;
+            height: 70vh;
+            background-color: #090040;
+            display: flex;
+            flex-direction: column;
         }
-        /*project-header  */
-        .project-header{
+
+        /* project header container */
+        .project-header {
             width: 100vw;
-            height: 20vh;
-            background-color:#090040;
+            height: 10vh;
             font-size: 40px;
             text-align: center;
-            align-content: center;
             color: white;
         }
-        /* live-project button */
-        .live-project{
-            width: 8vw;
-            height: 5vh;
-            border-radius: 25px;
-            background-color:#471396;
-            border: none;
-        }
-        /* project container */
-        .project-container{
-            width: 80vw;
-            height: 80vh;
-            background-color:#090040;
-            margin-left: 10%;
+
+        /* type of project container */
+        .type-of-project {
+            width: 100vw;
+            height: 50vh;
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            align-items: flex-start;
             justify-content: space-around;
+
         }
-        /* project one */
-        .project-one{
-            width: 25vw;
-            height: 38vh;
+        /* html project container */
+        .html-project{
+            width: 20vw;
+            height: 50vh;
             background-color: white;
+           border-radius: 20px;
             display: flex;
             flex-direction: column;
         }
-        .image-one{
-            width: 25vw;
-            height: 31vh;
-           background-image: url('https://images.stockcake.com/public/6/e/4/6e4481af-b066-47e0-b718-e51d6a64d5a1_large/illuminated-chess-set-stockcake.jpg');
-            background-repeat: no-repeat;
+        /* html-image container */
+        .html-image{
+            width: 20vw;
+            height: 40vh;
+            background-image: url("https://img.icons8.com/color/512/html-5--v2.png");
             background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #090040;
             text-align: center;
         }
-        .information-one{
-            width: 25vw;
-            height: 7vh;
-            background-color:#090040;
-              text-align: center;
+        /* html-button container */
+        .html-button{
+            width: 20vw;
+            height: 10vh;
             align-content: center;
+             background-color: #090040;
         }
-        /* project two */
-         .project-two{
-            width: 25vw;
-            height: 38vh;
-            background-color: white;
-              display: flex;
-            flex-direction: column;
-        }
-        .image-two{
-            width: 25vw;
-            height: 31vh;
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtecam8wFtyDv4qOQ2KJ0rcYoDOE0x_75XCg&s');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .information-two{
-            width: 25vw;
-            height: 7vh;
-            background-color: #090040;
-              text-align: center;
-            align-content: center;
-        }
-        /* project-three */
-         .project-three{
-            width: 25vw;
-            height: 38vh;
-            background-color: white;
-              display: flex;
-            flex-direction: column;
-        }
-        .image-three{
-            width: 25vw;
-            height: 31vh;
-            background-image: url('https://static.vecteezy.com/system/resources/previews/003/079/915/non_2x/school-timetable-rainbow-kid-design-of-planner-vector.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .information-three{
-            width: 25vw;
-            height: 7vh;
-            background-color: #090040;
-              text-align: center;
-            align-content: center;
-        }
-        /* project four */
-         .project-four{
-            width: 25vw;
-            height: 38vh;
-            background-color: white;
-              display: flex;
-            flex-direction: column;
-        }
-        .image-four{
-            width: 25vw;
-            height: 31vh;
-            background-image: url('https://media.istockphoto.com/id/1475807645/vector/3d-calculator-with-floating-coin.jpg?s=612x612&w=0&k=20&c=JfBmUEbdWKrZaNH9VymbsiTv438YjLnt01SYWv5ENNA=');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .information-four{
-            width: 25vw;
-            height: 7vh;
-            background-color:#090040;
-              text-align: center;
-            align-content: center;
-        }
-        /* project five */
-         .project-five{
-            width: 25vw;
-            height: 38vh;
-            background-color: white;
-              display: flex;
-            flex-direction: column;
-        }
-        .image-five{
-            width: 25vw;
-            height: 31vh;
-            background-image: url('https://themewagon.com/wp-content/uploads/2022/08/Frame-3736-2.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .information-five{
-            width: 25vw;
-            height: 7vh;
-            background-color: #090040;
-              text-align: center;
-            align-content: center;
-        }
-        /* project six */
-         .project-six{
-            width: 25vw;
-            height: 38vh;
-            background-color: white;
-              display: flex;
-            flex-direction: column;
-        }
-        .image-six{
-            width: 25vw;
-            height: 31vh;
-             background-image: url('https://i0.wp.com/sweettoothteaching.com/wp-content/uploads/2025/07/student-data-in-the-classroom.png?fit=1080%2C1080&ssl=1');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .information-six{
-            width: 25vw;
-            height: 7vh;
-            background-color:#090040;
-              text-align: center;
-            align-content: center;
-        }
-        /* project view button */
-        .product-button{
+        /* view project button */
+        .view-project{
             width: 8vw;
             height: 6vh;
+            background-color: purple;
             border-radius: 25px;
-            text-align: center;
-            align-content: center;
-            background-color: #471396;
-            border: none;
+             border: none;
+            margin-left: 30%;
         }
+        /*.css-project container  */
+                .css-project{
+            width: 20vw;
+            height: 50vh;
+            background-color: white;
+            border-radius: 20px;
+             display: flex;
+            flex-direction: column;
+             background-color: #090040;
+        }
+        /* css image container */
+        .css-image{
+            width: 20vw;
+            height: 40vh;
+            background-image: url("https://cdn-icons-png.flaticon.com/256/8421/8421889.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #090040;
+            text-align: center;
+        }
+        /* css button container */
+        .css-button{
+            width: 20vw;
+            height: 10vh;
+            align-content: center;
+             background-color: #090040;
+        }
+        /* .js-project container */
+                .js-project{
+            width: 20vw;
+            height: 50vh;
+            background-color: white;
+           
+            border-radius: 20px;
+        }
+        /* js-image container */
+        .js-image{
+            width: 20vw;
+            height: 40vh;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #090040;
+            text-align: center;
+        }
+        /* js-button container */
+        .js-button{
+            width: 20vw;
+            height: 10vh;
+            align-content: center;
+             background-color: #090040;
+        }
+        /* .live-project container  */
+                .live-project{
+            width: 20vw;
+            height: 50vh;
+            background-color: white;
+              border-radius: 20px;
+               background-color: #090040;
+        }
+        /* live image container */
+         .live-image{
+            width: 20vw;
+            height: 40vh;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQat2cGtTl04W8h1P1m9VS5FWTUSCa72b1R8A&s");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #090040;
+            text-align: center;
+        }
+        /* live button container */
+        .live-button{
+            width: 20vw;
+            height: 10vh;
+            align-content: center;
+             background-color: #090040;
+        }
+
+
+
+
 
         /* contact -page */
         .contact-page {
@@ -360,8 +340,9 @@ color: white;
             display: flex;
             flex-direction: column;
         }
+
         /* contact header */
-        .contact-header{
+        .contact-header {
             width: 100vw;
             height: 20vh;
             font-size: 40px;
@@ -369,19 +350,21 @@ color: white;
             align-content: center;
             color: white;
         }
+
         /* contact container */
-        .contact-container{
+        .contact-container {
             width: 80vw;
             height: 72vh;
-            background-color:#090040;
+            background-color: #090040;
             margin-left: 9%;
-             display: flex;
+            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             align-content: flex-start;
             justify-content: space-around;
             row-gap: 6vh;
         }
+
         /* .contact-container-one */
         .contact-container-one {
             width: 22vw;
@@ -396,13 +379,15 @@ color: white;
             transform: scale(1.1);
             box-shadow: 0 0 15px red, 0 0 20px green
         }
-/* .contact-image  */
+
+        /* .contact-image  */
         .contact-image {
             width: 22vw;
             height: 15vh;
             background-color: rgb(38, 24, 50);
         }
-/* .contact-information  */
+
+        /* .contact-information  */
         .contact-information {
             width: 22vw;
             height: 15vh;
@@ -411,26 +396,30 @@ color: white;
             font-size: 22px;
             color: white;
         }
-/*  .email-container */
+
+        /*  .email-container */
         .email-container {
             width: 22vw;
             height: 30vh;
             background-color: white;
-              flex-direction: column;
+            flex-direction: column;
             transition: 0.8s, transform 0.8s;
 
         }
-         .email-container:hover {
+
+        .email-container:hover {
             transform: scale(1.1);
             box-shadow: 0 0 15px red, 0 0 20px green
         }
-/*   .email-image  */
+
+        /*   .email-image  */
         .email-image {
             width: 22vw;
             height: 15vh;
             background-color: rgb(33, 19, 46);
         }
-/*  .email-information */
+
+        /*  .email-information */
 
         .email-information {
             width: 22vw;
@@ -440,25 +429,29 @@ color: white;
             font-size: 22px;
             color: white;
         }
-/*  .linkedin-container */
+
+        /*  .linkedin-container */
         .linkedin-container {
             width: 22vw;
             height: 30vh;
             background-color: rgb(34, 23, 45);
-              flex-direction: column;
+            flex-direction: column;
             transition: 0.8s, transform 0.8s;
         }
-         .linkedin-container:hover {
+
+        .linkedin-container:hover {
             transform: scale(1.1);
             box-shadow: 0 0 15px red, 0 0 20px green
         }
-/* .linkedin-image */
+
+        /* .linkedin-image */
         .linkedin-image {
             width: 22vw;
             height: 15vh;
             background-color: rgb(37, 23, 50);
         }
-/* .linkedin-information */
+
+        /* .linkedin-information */
         .linkedin-information {
             width: 22vw;
             height: 15vh;
@@ -467,26 +460,30 @@ color: white;
             font-size: 22px;
             color: white;
         }
-/*  .github-container  */
+
+        /*  .github-container  */
         .github-container {
             width: 22vw;
             height: 30vh;
             background-color: rgb(34, 23, 45);
-              flex-direction: column;
+            flex-direction: column;
             transition: 0.8s, transform 0.8s;
 
         }
-         .github-container:hover {
+
+        .github-container:hover {
             transform: scale(1.1);
             box-shadow: 0 0 15px red, 0 0 20px green
         }
-/*  .github-image */
+
+        /*  .github-image */
         .github-image {
             width: 22vw;
             height: 15vh;
             background-color: rgb(34, 23, 45);
         }
-/* .github-information */
+
+        /* .github-information */
         .github-information {
             width: 22vw;
             height: 15vh;
@@ -495,534 +492,1092 @@ color: white;
             font-size: 22px;
             color: white;
         }
-/*   .image-contact class of images */
+
+        /*   .image-contact class of images */
         .image-contact {
             margin-top: 10%;
             margin-left: 42%;
         }
-         /* .footer */
-    .footer{
-        width: 100vw;
-        height: 10vh;
-      
-        text-align: center;
-        font-size: 22px;
-        align-content: center;
-        background-color:#090040;
-        color: white;
-    }
-    a{
-        text-decoration: none;
-       color: white;
-    }
-    @media( min-width:320px) and ( max-width:431px) {
-         html{
-            scroll-behavior: smooth;
-        }
-        body {
-            overflow-x: hidden;
-           
-        }
 
-        /* maain container */
-        .main-container {
-            width: 100vw;
-            height: auto;
-        }
-
-        /* home page */
-        .home-page {
-
-            width: 100vw;
-            height: 130vh;
-            background-color: #090040;
-        }
-
-        /* header container */
-        .header-container {
-            width: 100vw;
-           height: 7vh;
-            background-color: #090040;
-            position: fixed;
-       
-        }
-
-        /* .portfolio name */
-        .portfolio {
-            font-size: 18px;
-            text-align: center;
-            align-content: center;
-            color: white;
-            margin-left: 0.5%;
-            
-        }
-/* home */
-        .home {
-            font-size: 15px;
-            text-align: center;
-            align-content: center;
-            color: white;
-            margin-left:20%;
-            
-          
-            
-        }
-/* about */
-        .about {
-            font-size: 15px;
-            text-align: center;
-            align-content: center;
-            color: white;
-           
-        }
-/* project */
-        .project {
-            font-size: 15px;
-            text-align: center;
-            align-content: center;
-            color: white;
-           
-        }
-/* contact */
-        .contact {
-            font-size: 15px;
-            text-align: center;
-            align-content: center;
-            color: white;
-           
-        }
-
-        /* home container */
-        .home-container {
-            width: 100vw;
-            height: 80vh;
-            background-color: #090040;
-         
-        }
-         /* infomation */
-        .information {
-            width: 100vw;
-            height: 100vh;
-            background-color: #471396;
-            margin-left: 0%;
-            display: flex;
-            flex-direction: column-reverse;
-            color: white;
-        }
-
-        /* information- container */
-        .information-container {
-            width: 100vw;
-           height: 60vh;
-        }
-/* image container */
-        .image-container {
-            width: 70vw;
-            height: 40vh;
-            background-color: blue;
-            background-image: url('./assets/image/IMG_20220525_193337.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin-left: 15%;
-            
-        }
-        .self-name {
-           margin-left: 18%;
-            font-size: 32px;
-        }
-
-        .self-intro {
-            margin-left: 22%;
-            font-size: 20px;
-        }
-
-        .prajwal-intro {
-            margin-left: 10%;
-            font-size: 18px;
-        }
-          /* about page */
-        .about-page {
-            width: 100vw;
-            height: 160vh;
-            background-color: #090040;
-        }
-/*   .about-header */
-        .about-header {
-            font-size: 40px;
-            text-align: center;
-            align-content: center;
+        /* .footer */
+        .footer {
             width: 100vw;
             height: 10vh;
-            color: white;
-        }
 
-        /* about information */
-        .about-information {
-            width: 80vw;
-            height: 140vh;
-            background-color: white;
-            margin-left: 0%;
-            display: flex;
-            flex-direction:column-reverse;
-        }
-        /*.about-image  */
-        .about-image {
-            width: 100vw;
-            height: 70vh;
-            background-image: url('./assets/image/prajwal\ passport.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-/* information-about */
-        .information-about {
-            width: 100vw;
-            height: 80vh;
-            font-size: 20px;
-            background-color:  #471396;
-color: white;
-
-        }
-         /* project-page */
-        .project-page {
-            width: 100vw;
-            height: 300vh;
-            background-color:#090040;
-        }
-        /*project-header  */
-        .project-header{
-            width: 100vw;
-            height: 20vh;
-            background-color:#090040;
-            font-size: 40px;
             text-align: center;
+            font-size: 22px;
             align-content: center;
+            background-color: #090040;
             color: white;
         }
-        /* live-project button */
-        .live-project{
-            width: 25vw;
-            height: 4vh;
-            border-radius: 25px;
-            background-color:#471396;
-            border: none;
+
+        a {
+            text-decoration: none;
+            color: white;
         }
-        /* project container */
-        .project-container{
+
+        @media(min-width:320px) and (max-width:431px) {
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                overflow-x: hidden;
+
+            }
+
+            /* maain container */
+            .main-container {
+                width: 100vw;
+                height: auto;
+            }
+
+            /* home page */
+            .home-page {
+
+                width: 100vw;
+                height: 100vh;
+                background-color: #090040;
+            }
+
+            /* header container */
+            .header-container {
+                width: 100vw;
+                height: 7vh;
+                background-color: #090040;
+                position: fixed;
+
+            }
+
+            /* .portfolio name */
+            .portfolio {
+                font-size: 18px;
+                text-align: center;
+                align-content: center;
+                color: white;
+                margin-left: 0.5%;
+
+            }
+
+            /* home */
+            .home {
+                font-size: 15px;
+                text-align: center;
+                align-content: center;
+                color: white;
+                margin-left: 15%;
+
+
+
+            }
+
+            /* about */
+            .about {
+                font-size: 15px;
+                text-align: center;
+                align-content: center;
+                color: white;
+
+            }
+
+            /* project */
+            .project {
+                font-size: 15px;
+                text-align: center;
+                align-content: center;
+                color: white;
+
+            }
+
+            /* contact */
+            .contact {
+                font-size: 15px;
+                text-align: center;
+                align-content: center;
+                color: white;
+
+            }
+
+            /* home container */
+            .home-container {
+                width: 100vw;
+                height: 60vh;
+                background-color: #090040;
+
+            }
+
+            /* infomation */
+            .information {
+                width: 100vw;
+                height: 100vh;
+                background-color: #471396;
+                margin-left: 0%;
+                display: flex;
+                flex-direction: column-reverse;
+                color: white;
+            }
+
+            /* information- container */
+            .information-container {
+                width: 100vw;
+                height: 40vh;
+            }
+
+            /* image container */
+            .image-container {
+                width: 70vw;
+                height: 40vh;
+                background-color: blue;
+                background-image: url('./assets/image/IMG_20220525_193337.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-left: 15%;
+
+            }
+
+            .self-name {
+                margin-left: 18%;
+                font-size: 32px;
+            }
+
+            .self-intro {
+                margin-left: 22%;
+                font-size: 20px;
+            }
+
+            .prajwal-intro {
+                margin-left: 10%;
+                font-size: 18px;
+            }
+
+            /* about page */
+            .about-page {
+                width: 100vw;
+                height: 100vh;
+                background-color: #090040;
+            }
+
+            /*   .about-header */
+            .about-header {
+                font-size: 40px;
+                text-align: center;
+                align-content: center;
+                width: 100vw;
+                height: 10vh;
+                color: white;
+            }
+
+            /* about information */
+            .about-information {
+                width: 80vw;
+                height: 90vh;
+                background-color: white;
+                margin-left: 0%;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            /*.about-image  */
+            .about-image {
+                width: 100vw;
+                height: 70vh;
+                background-image: url('./assets/image/prajwal\ passport.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* information-about */
+            .information-about {
+                width: 100vw;
+                height: 20vh;
+                font-size: 18px;
+                background-color: #471396;
+                color: white;
+
+            }
+
+            /* project-page */
+            
+             .project-page {
             width: 100vw;
-            height: 280vh;
-            background-color:#090040;
-            margin-left: 0%;
+            height: 220vh;
+            background-color: #090040;
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            align-items: flex-start;
+        }
+
+        /* project header */
+        .project-header {
+            width: 100vw;
+            height: 10vh;
+            font-size: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        /* type of project container */
+        .type-of-project {
+            width: 100vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
             justify-content: space-around;
+
         }
-         /* project one */
-        .project-one{
+        /* html project container */
+        .html-project{
             width: 100vw;
-            height: 38vh;
+            height: 50vh;
             background-color: white;
+           border-radius: 20px;
             display: flex;
             flex-direction: column;
         }
-        .image-one{
+        .html-image{
             width: 100vw;
-            height: 31vh;
-           background-image: url('https://images.stockcake.com/public/6/e/4/6e4481af-b066-47e0-b718-e51d6a64d5a1_large/illuminated-chess-set-stockcake.jpg');
-            background-repeat: no-repeat;
+            height: 40vh;
+            background-image: url("https://img.icons8.com/color/512/html-5--v2.png");
             background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #090040;
             text-align: center;
         }
-        .information-one{
-            width: 100vw;
-            height: 7vh;
-            background-color:#090040;
-              text-align: center;
-            align-content: center;
-        }
-         /* project two */
-         .project-two{
-            width: 100vw;
-            height: 38vh;
-            background-color: white;
-              display: flex;
-            flex-direction: column;
-        }
-        .image-two{
-            width: 100vw;
-            height: 31vh;
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtecam8wFtyDv4qOQ2KJ0rcYoDOE0x_75XCg&s');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .information-two{
-            width: 100vw;
-            height: 7vh;
-            background-color: #090040;
-              text-align: center;
-            align-content: center;
-        }
-        /* project-three */
-         .project-three{
-            width: 100vw;
-            height: 38vh;
-            background-color: white;
-              display: flex;
-            flex-direction: column;
-        }
-        .image-three{
-            width: 100vw;
-            height: 31vh;
-            background-image: url('https://static.vecteezy.com/system/resources/previews/003/079/915/non_2x/school-timetable-rainbow-kid-design-of-planner-vector.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .information-three{
-            width: 100vw;
-            height: 7vh;
-            background-color: #090040;
-              text-align: center;
-            align-content: center;
-        }
-        /* project four */
-         .project-four{
-            width: 100vw;
-            height: 38vh;
-            background-color: white;
-              display: flex;
-            flex-direction: column;
-        }
-        .image-four{
-            width: 100vw;
-            height: 31vh;
-            background-image: url('https://media.istockphoto.com/id/1475807645/vector/3d-calculator-with-floating-coin.jpg?s=612x612&w=0&k=20&c=JfBmUEbdWKrZaNH9VymbsiTv438YjLnt01SYWv5ENNA=');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .information-four{
-            width: 100vw;
-            height: 7vh;
-            background-color:#090040;
-              text-align: center;
-            align-content: center;
-        }
-        /* project five */
-         .project-five{
-            width: 100vw;
-            height: 38vh;
-            background-color: white;
-              display: flex;
-            flex-direction: column;
-        }
-        .image-five{
-            width: 100vw;
-            height: 31vh;
-            background-image: url('https://themewagon.com/wp-content/uploads/2022/08/Frame-3736-2.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .information-five{
-            width: 100vw;
-            height: 7vh;
-            background-color: #090040;
-              text-align: center;
-            align-content: center;
-        }
-         /* project six */
-         .project-six{
-            width: 100vw;
-            height: 38vh;
-            background-color: white;
-              display: flex;
-            flex-direction: column;
-        }
-        .image-six{
-            width: 100vw;
-            height: 31vh;
-             background-image: url('https://i0.wp.com/sweettoothteaching.com/wp-content/uploads/2025/07/student-data-in-the-classroom.png?fit=1080%2C1080&ssl=1');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .information-six{
-            width: 100vw;
-            height: 7vh;
-            background-color:#090040;
-              text-align: center;
-            align-content: center;
-        }
-         /* project view button */
-        .product-button{
-            width: 18vw;
-            height: 5vh;
-            border-radius: 10px;
-            text-align: center;
-            align-content: center;
-            background-color: #471396;
-            border: none;
-        }
-         /* contact -page */
-        .contact-page {
-            width: 100vw;
-            height: 130vh;
-            background-color: #090040;
-            display: flex;
-            flex-direction: column;
-        }
-        /* contact header */
-        .contact-header{
+        .html-button{
             width: 100vw;
             height: 10vh;
-            font-size: 40px;
-            text-align: center;
             align-content: center;
-            color: white;
+             background-color: #090040;
         }
-        /* contact container */
-        .contact-container{
-            width: 100vw;
-            height: 130vh;
-            background-color:#090040;
-            margin-left: 0%;
+        .view-project{
+            width: 35vw;
+            height: 6vh;
+            background-color: purple;
+            border-radius: 25px;
+             border: none;
+            margin-left: 32%;
+        }
+        /*.css-project  */
+                .css-project{
+            width: 20vw;
+            height: 50vh;
+            background-color: white;
+            border-radius: 20px;
              display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            align-content: flex-start;
-            justify-content: space-around;
-            row-gap: 1vh;
+             background-color: #090040;
         }
-          /* .contact-container-one */
-        .contact-container-one {
+        .css-image{
             width: 100vw;
-            height: 30vh;
+            height: 40vh;
+            background-image: url("https://cdn-icons-png.flaticon.com/256/8421/8421889.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #090040;
+            text-align: center;
+        }
+        .css-button{
+            width: 100vw;
+            height: 10vh;
+            align-content: center;
+             background-color: #090040;
+        }
+        /* .js-project */
+                .js-project{
+            width: 100vw;
+            height: 50vh;
             background-color: white;
-            display: flex;
-            flex-direction: column;
-            transition: 0.8s, transform 0.8s;
-        }
-
-        .contact-container-one:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px red, 0 0 20px green
-        }
-/* .contact-image  */
-        .contact-image {
-            width: 100vw;
-            height: 15vh;
-            background-color: rgb(38, 24, 50);
            
+            border-radius: 20px;
         }
-/* .contact-information  */
-        .contact-information {
+        .js-image{
             width: 100vw;
-            height: 15vh;
-            background-color: rgb(33, 19, 46);
+            height: 40vh;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #090040;
             text-align: center;
-            font-size: 22px;
-            color: white;
         }
-/*  .email-container */
-        .email-container {
+        .js-button{
             width: 100vw;
-            height: 30vh;
+            height: 10vh;
+            align-content: center;
+             background-color: #090040;
+        }
+        /* .live-project  */
+                .live-project{
+            width: 100vw;
+            height: 50vh;
             background-color: white;
-              flex-direction: column;
-            transition: 0.8s, transform 0.8s;
-
+              border-radius: 20px;
+               background-color: #090040;
+                 align-content: center;
         }
-         .email-container:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px red, 0 0 20px green
-        }
-/*   .email-image  */
-        .email-image {
+         .live-image{
             width: 100vw;
-            height: 15vh;
-            background-color: rgb(33, 19, 46);
-        }
-/*  .email-information */
-
-        .email-information {
-            width: 100vw;
-            height: 15vh;
-            background-color: rgb(33, 19, 46);
+            height: 40vh;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQat2cGtTl04W8h1P1m9VS5FWTUSCa72b1R8A&s");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #090040;
             text-align: center;
-            font-size: 22px;
-            color: white;
         }
-/*  .linkedin-container */
-        .linkedin-container {
+        .live-button{
             width: 100vw;
-            height: 30vh;
-            background-color: rgb(34, 23, 45);
-              flex-direction: column;
-            transition: 0.8s, transform 0.8s;
+            height: 10vh;
+            align-content: center;
+             background-color: #090040;
         }
-         .linkedin-container:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px red, 0 0 20px green
-        }
-/* .linkedin-image */
-        .linkedin-image {
-            width: 100vw;
-            height: 15vh;
-            background-color: rgb(37, 23, 50);
-        }
-/* .linkedin-information */
-        .linkedin-information {
-            width: 100vw;
-            height: 15vh;
-            background-color: rgb(33, 19, 46);
-            text-align: center;
-            font-size: 22px;
-            color: white;
-        }
-/*  .github-container  */
-        .github-container {
-            width: 100vw;
-            height: 30vh;
-            background-color: rgb(34, 23, 45);
-              flex-direction: column;
-            transition: 0.8s, transform 0.8s;
+
+
+            /* contact -page */
+            .contact-page {
+                width: 100vw;
+                height: 130vh;
+                background-color: #090040;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* contact header */
+            .contact-header {
+                width: 100vw;
+                height: 10vh;
+                font-size: 40px;
+                text-align: center;
+                align-content: center;
+                color: white;
+            }
+
+            /* contact container */
+            .contact-container {
+                width: 100vw;
+                height: 130vh;
+                background-color: #090040;
+                margin-left: 0%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                justify-content: space-around;
+                row-gap: 1vh;
+            }
+
+            /* .contact-container-one */
+            .contact-container-one {
+                width: 100vw;
+                height: 30vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                transition: 0.8s, transform 0.8s;
+            }
+
+            .contact-container-one:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px red, 0 0 20px green
+            }
+
+            /* .contact-image  */
+            .contact-image {
+                width: 100vw;
+                height: 15vh;
+                background-color: rgb(38, 24, 50);
+
+            }
+
+            /* .contact-information  */
+            .contact-information {
+                width: 100vw;
+                height: 15vh;
+                background-color: rgb(33, 19, 46);
+                text-align: center;
+                font-size: 22px;
+                color: white;
+            }
+
+            /*  .email-container */
+            .email-container {
+                width: 100vw;
+                height: 30vh;
+                background-color: white;
+                flex-direction: column;
+                transition: 0.8s, transform 0.8s;
+
+            }
+
+            .email-container:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px red, 0 0 20px green
+            }
+
+            /*   .email-image  */
+            .email-image {
+                width: 100vw;
+                height: 15vh;
+                background-color: rgb(33, 19, 46);
+            }
+
+            /*  .email-information */
+
+            .email-information {
+                width: 100vw;
+                height: 15vh;
+                background-color: rgb(33, 19, 46);
+                text-align: center;
+                font-size: 22px;
+                color: white;
+            }
+
+            /*  .linkedin-container */
+            .linkedin-container {
+                width: 100vw;
+                height: 30vh;
+                background-color: rgb(34, 23, 45);
+                flex-direction: column;
+                transition: 0.8s, transform 0.8s;
+            }
+
+            .linkedin-container:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px red, 0 0 20px green
+            }
+
+            /* .linkedin-image */
+            .linkedin-image {
+                width: 100vw;
+                height: 15vh;
+                background-color: rgb(37, 23, 50);
+            }
+
+            /* .linkedin-information */
+            .linkedin-information {
+                width: 100vw;
+                height: 15vh;
+                background-color: rgb(33, 19, 46);
+                text-align: center;
+                font-size: 22px;
+                color: white;
+            }
+
+            /*  .github-container  */
+            .github-container {
+                width: 100vw;
+                height: 30vh;
+                background-color: rgb(34, 23, 45);
+                flex-direction: column;
+                transition: 0.8s, transform 0.8s;
+
+            }
+
+            .github-container:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px red, 0 0 20px green
+            }
+
+            /*  .github-image */
+            .github-image {
+                width: 100vw;
+                height: 15vh;
+                background-color: rgb(34, 23, 45);
+            }
+
+            /* .github-information */
+            .github-information {
+                width: 100vw;
+                height: 15vh;
+                background-color: rgb(34, 23, 45);
+                text-align: center;
+                font-size: 22px;
+                color: white;
+            }
+
+            /*   .image-contact class of images */
+            .image-contact {
+                margin-top: 10%;
+                margin-left: 42%;
+            }
+
+            /* .footer */
+            .footer {
+                width: 100vw;
+                height: 10vh;
+
+                text-align: center;
+                font-size: 22px;
+                align-content: center;
+                background-color: #090040;
+                color: white;
+            }
 
         }
-         .github-container:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px red, 0 0 20px green
-        }
-/*  .github-image */
-        .github-image {
-            width: 100vw;
-            height: 15vh;
-            background-color: rgb(34, 23, 45);
-        }
-/* .github-information */
-        .github-information {
-            width: 100vw;
-            height: 15vh;
-            background-color: rgb(34, 23, 45);
-            text-align: center;
-            font-size: 22px;
-            color: white;
-        }
-/*   .image-contact class of images */
-        .image-contact {
-            margin-top: 10%;
-            margin-left: 42%;
-        }
-             /* .footer */
-    .footer{
-        width: 100vw;
-        height: 10vh;
-      
-        text-align: center;
-        font-size: 22px;
-        align-content: center;
-        background-color:#090040;
-        color: white;
-    }
 
-    }
+        @media(min-width:431px) and (max-width:769px) {
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                overflow-x: hidden;
+
+            }
+
+            /* maain container */
+            .main-container {
+                width: 100vw;
+                height: auto;
+            }
+
+            /* home page */
+            .home-page {
+
+                width: 100vw;
+                height: 100vh;
+                background-color: #090040;
+            }
+
+            /* header container */
+            .header-container {
+                width: 100vw;
+                height: 6vh;
+                background-color: #090040;
+                position: fixed;
+                margin-top: 2%;
+
+            }
+
+            /* .portfolio name */
+            .portfolio {
+                font-size: 28px;
+                text-align: center;
+                align-content: center;
+                color: white;
+                margin-left: 3%;
+
+            }
+
+            /* home */
+            .home {
+                font-size: 20px;
+                text-align: center;
+                align-content: center;
+                color: white;
+                margin-left: 30%;
+
+
+
+            }
+
+            /* about */
+            .about {
+                font-size: 20px;
+                text-align: center;
+                align-content: center;
+                color: white;
+
+            }
+
+            /* project */
+            .project {
+                font-size: 20px;
+                text-align: center;
+                align-content: center;
+                color: white;
+
+            }
+
+            /* contact */
+            .contact {
+                font-size: 20px;
+                text-align: center;
+                align-content: center;
+                color: white;
+
+            }
+
+            /* home container */
+            .home-container {
+                width: 100vw;
+                height: 60vh;
+                background-color: #090040;
+
+            }
+
+            /* infomation */
+            .information {
+                width: 100vw;
+                height: 100vh;
+                background-color: #471396;
+                margin-left: 0%;
+                display: flex;
+                flex-direction: column-reverse;
+                color: white;
+            }
+
+            /* information- container */
+            .information-container {
+                width: 100vw;
+                height: 50vh;
+            }
+
+            /* image container */
+            .image-container {
+                width: 70vw;
+                height: 70vh;
+                background-color: blue;
+                background-image: url('./assets/image/IMG_20220525_193337.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-left: 15%;
+
+            }
+
+            .self-name {
+                margin-left: 20%;
+                font-size: 50px;
+            }
+
+            .self-intro {
+                margin-left: 22%;
+                font-size: 35px;
+            }
+
+            .prajwal-intro {
+                margin-left: 10%;
+                font-size: 30px;
+            }
+
+            /* about page */
+            .about-page {
+                width: 100vw;
+                height: 100vh;
+                background-color: #090040;
+            }
+
+            /*   .about-header */
+            .about-header {
+                font-size: 40px;
+                text-align: center;
+                align-content: center;
+                width: 100vw;
+                height: 10vh;
+                color: white;
+            }
+
+            /* about information */
+            .about-information {
+                width: 80vw;
+                height: 90vh;
+                background-color: white;
+                margin-left: 0%;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            /*.about-image  */
+            .about-image {
+                width: 100vw;
+                height: 70vh;
+                background-image: url('./assets/image/prajwal\ passport.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            /* information-about */
+            .information-about {
+                width: 100vw;
+                height: 35vh;
+                font-size: 30px;
+                background-color: #471396;
+                color: white;
+
+            }
+
+            /* project-page */
+            .project-page {
+                width: 100vw;
+                height: 140vh;
+                background-color: #090040;
+            }
+
+            /*project-header  */
+            .project-header {
+                width: 100vw;
+                height: 20vh;
+                background-color: #090040;
+                font-size: 40px;
+                text-align: center;
+                align-content: center;
+                color: white;
+            }
+
+            /* live-project button */
+            .live-project {
+                width: 25vw;
+                height: 6vh;
+                border-radius: 25px;
+                background-color: purple;
+                border: none;
+            }
+
+            /* project container */
+            .project-container {
+                width: 100vw;
+                height: 50vh;
+                background-color: #090040;
+                margin-left: 0%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-around;
+            }
+
+            /* project one */
+            .project-one {
+                width: 40vw;
+                height: 38vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image-one {
+                width: 40vw;
+                height: 31vh;
+                background-image: url('https://images.stockcake.com/public/6/e/4/6e4481af-b066-47e0-b718-e51d6a64d5a1_large/illuminated-chess-set-stockcake.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+            }
+
+            .information-one {
+                width: 40vw;
+                height: 7vh;
+                background-color: #090040;
+                text-align: center;
+                align-content: center;
+            }
+
+            /* project two */
+            .project-two {
+                width: 40vw;
+                height: 38vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image-two {
+                width: 40vw;
+                height: 31vh;
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtecam8wFtyDv4qOQ2KJ0rcYoDOE0x_75XCg&s');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .information-two {
+                width: 40vw;
+                height: 7vh;
+                background-color: #090040;
+                text-align: center;
+                align-content: center;
+            }
+
+            /* project-three */
+            .project-three {
+                width: 40vw;
+                height: 38vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image-three {
+                width: 40vw;
+                height: 31vh;
+                background-image: url('https://static.vecteezy.com/system/resources/previews/003/079/915/non_2x/school-timetable-rainbow-kid-design-of-planner-vector.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .information-three {
+                width: 40vw;
+                height: 7vh;
+                background-color: #090040;
+                text-align: center;
+                align-content: center;
+            }
+
+            /* project four */
+            .project-four {
+                width: 40vw;
+                height: 38vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image-four {
+                width: 40vw;
+                height: 31vh;
+                background-image: url('https://media.istockphoto.com/id/1475807645/vector/3d-calculator-with-floating-coin.jpg?s=612x612&w=0&k=20&c=JfBmUEbdWKrZaNH9VymbsiTv438YjLnt01SYWv5ENNA=');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .information-four {
+                width: 40vw;
+                height: 7vh;
+                background-color: #090040;
+                text-align: center;
+                align-content: center;
+            }
+
+            /* project five */
+            .project-five {
+                width: 40vw;
+                height: 38vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image-five {
+                width: 40vw;
+                height: 31vh;
+                background-image: url('https://themewagon.com/wp-content/uploads/2022/08/Frame-3736-2.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .information-five {
+                width: 40vw;
+                height: 7vh;
+                background-color: #090040;
+                text-align: center;
+                align-content: center;
+            }
+
+            /* project six */
+            .project-six {
+                width: 40vw;
+                height: 38vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image-six {
+                width: 40vw;
+                height: 31vh;
+                background-image: url('https://i0.wp.com/sweettoothteaching.com/wp-content/uploads/2025/07/student-data-in-the-classroom.png?fit=1080%2C1080&ssl=1');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .information-six {
+                width: 40vw;
+                height: 7vh;
+                background-color: #090040;
+                text-align: center;
+                align-content: center;
+            }
+
+            /* project view button */
+            .product-button {
+                width: 18vw;
+                height: 5vh;
+                border-radius: 10px;
+                text-align: center;
+                align-content: center;
+                background-color: purple;
+                border: none;
+            }
+
+            /* contact -page */
+            .contact-page {
+                width: 100vw;
+                height: 70vh;
+                background-color: #090040;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* contact header */
+            .contact-header {
+                width: 100vw;
+                height: 10vh;
+                font-size: 40px;
+                text-align: center;
+                align-content: center;
+                color: white;
+            }
+
+            /* contact container */
+            .contact-container {
+                width: 100vw;
+                height: 50vh;
+                background-color: #090040;
+                margin-left: 0%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                justify-content: space-around;
+                row-gap: 1vh;
+            }
+
+            /* .contact-container-one */
+            .contact-container-one {
+                width: 40vw;
+                height: 30vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                transition: 0.8s, transform 0.8s;
+            }
+
+            .contact-container-one:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px red, 0 0 20px green
+            }
+
+            /* .contact-image  */
+            .contact-image {
+                width: 40vw;
+                height: 15vh;
+                background-color: rgb(38, 24, 50);
+
+            }
+
+            /* .contact-information  */
+            .contact-information {
+                width: 40vw;
+                height: 15vh;
+                background-color: rgb(33, 19, 46);
+                text-align: center;
+                font-size: 22px;
+                color: white;
+            }
+
+            /*  .email-container */
+            .email-container {
+                width: 40vw;
+                height: 30vh;
+                background-color: white;
+                flex-direction: column;
+                transition: 0.8s, transform 0.8s;
+
+            }
+
+            .email-container:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px red, 0 0 20px green
+            }
+
+            /*   .email-image  */
+            .email-image {
+                width: 40vw;
+                height: 15vh;
+                background-color: rgb(33, 19, 46);
+            }
+
+            /*  .email-information */
+
+            .email-information {
+                width: 40vw;
+                height: 15vh;
+                background-color: rgb(33, 19, 46);
+                text-align: center;
+                font-size: 22px;
+                color: white;
+            }
+
+            /*  .linkedin-container */
+            .linkedin-container {
+                width: 40vw;
+                height: 30vh;
+                background-color: rgb(34, 23, 45);
+                flex-direction: column;
+                transition: 0.8s, transform 0.8s;
+            }
+
+            .linkedin-container:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px red, 0 0 20px green
+            }
+
+            /* .linkedin-image */
+            .linkedin-image {
+                width: 40vw;
+                height: 15vh;
+                background-color: rgb(37, 23, 50);
+            }
+
+            /* .linkedin-information */
+            .linkedin-information {
+                width: 40vw;
+                height: 15vh;
+                background-color: rgb(33, 19, 46);
+                text-align: center;
+                font-size: 22px;
+                color: white;
+            }
+
+            /*  .github-container  */
+            .github-container {
+                width: 40vw;
+                height: 30vh;
+                background-color: rgb(34, 23, 45);
+                flex-direction: column;
+                transition: 0.8s, transform 0.8s;
+
+            }
+
+            .github-container:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 15px red, 0 0 20px green
+            }
+
+            /*  .github-image */
+            .github-image {
+                width: 40vw;
+                height: 15vh;
+                background-color: rgb(34, 23, 45);
+            }
+
+            /* .github-information */
+            .github-information {
+                width: 40vw;
+                height: 15vh;
+                background-color: rgb(34, 23, 45);
+                text-align: center;
+                font-size: 22px;
+                color: white;
+            }
+
+            /*   .image-contact class of images */
+            .image-contact {
+                margin-top: 10%;
+                margin-left: 42%;
+            }
+
+            /* .footer */
+            .footer {
+                width: 100vw;
+                height: 10vh;
+
+                text-align: center;
+                font-size: 22px;
+                align-content: center;
+                background-color: #090040;
+                color: white;
+            }
+
+
+
+        }
     </style>
 </head>
 
@@ -1062,117 +1617,102 @@ color: white;
             <!-- about container in top side -->
             <div class="about-header">About</div>
             <!-- about-information container in down side devid in to two part -->
-            <div class="about-information"> 
+            <div class="about-information">
                 <!-- one part is information-about  -->
-                <div class="information-about">  <br><br><br>  I am Prajwal Nakade Full Stack Developer trainee. I have completed 
-                    learning HTML and CSS, which are the basic building blocks of web development. HTML helps me create 
-                    the structure of web pages, and CSS helps me style and design them to look attractive and 
-                    user-friendly. Now, I am moving forward to learn more advanced languages and technologies to build 
-                    complete websites and web applications. My goal is to become a skilled Full Stack Developer who can 
-                    handle both frontend and backend development.</div>
-                    <!-- second part is about-image container -->
+                <div class="information-about"> <br><br><br> <br><br> <span class="prajwal-information"> I am Prajwal
+                        Nakade Full Stack Developer trainee.</span> <br> <span class="prajwal-information"> I have
+                        completed
+                        learning HTML and CSS, which </span> <br><span class="prajwal-information">are the basic
+                        building blocks of web development.</span></div>
+                <!-- second part is about-image container -->
                 <div class="about-image"></div>
             </div>
         </div>
         <!-- project-page  container-->
         <div class="project-page" id="Project">
-            <!-- project header container on top -->
-            <div class="project-header">Project <br> <button class="live-project"><a href="../live-project/index.html">live project</button></a></div>
-            <!-- project-container down side -->
-            <div class="project-container">
-                <!-- project-one container -->
-                <div class="project-one">
-                    <div class="image-one"></div>
-                    <div class="information-one">
-                        <button class="product-button"><a href="./page/HTML/structural-tag/grid/chess-grid.html">Chess</button> </a>
-                    </div>
-                    
+            <div class="project-header">Project</div>
+            <!-- type of project -->
+            <div class="type-of-project">
+                <!-- html-project -->
+                <div class="html-project">
+                    <div class="html-image"></div>
+                    <div class="html-button"><button class="view-project"><a href="./page/HTML/multi-Page/html-project.html">View Project</a></button></div>
                 </div>
-                <!-- project two container -->
-                <div class="project-two">
-                     <div class="image-two"></div>
-                    <div class="information-two">  <button class="product-button"><a href="./page/HTML/form-tages/form-teg.html">Form</button></a></div>
+                <!-- css project -->
+                <div class="css-project">
+<div class="css-image"></div>
+                    <div class="css-button"><button class="view-project"><a href="./page/HTML/multi-Page/css.html">View Project</a></button></div>
                 </div>
-                <!-- project three container -->
-                <div class="project-three">
-                     <div class="image-three"></div>
-                    <div class="information-three">
-                         <button class="product-button"><a href="./page/HTML/structural-tag/flex.html/flex-timetable.html">Time Table</button></a>T
-                    </div>
+                <!-- js project -->
+                <div class="js-project">
+                    <div class="js-image"></div>
+                    <div class="js-button"><button class="view-project"> <a href="./page/HTML/multi-Page/js-project.html">View Project</a></button></div>  
                 </div>
-                <!-- project four container -->
-                <div class="project-four">
-                     <div class="image-four"></div>
-                    <div class="information-four">
-                         <button class="product-button"><a href="./page/HTML/table-tages/calculetor.html">Claculator</button></a>
-                    </div>
-                </div>
-                <!-- project five container -->
-                <div class="project-five">
-                     <div class="image-five"></div>
-                    <div class="information-five">
-                         <button class="product-button"><a href="./page/HTML/structural-tag/flex.html/flex-div.html">Flex</button></a>
-                    </div>
-                </div>
-                <!-- project six container -->
-                <div class="project-six">
-                     <div class="image-six"></div>
-                    <div class="information-six"> <button class="product-button"><a href="./page/HTML/table-tages/student.html  ">Data</button></a></div>
+                <!-- live project -->
+                <div class="live-project">
+                    <div class="live-image"></div>
+                    <div class="live-button"><button class="view-project"> <a href="./page/HTML/multi-Page/live-project.html">View Project</a></button></div> 
                 </div>
             </div>
-            
+
         </div>
+
         <!-- contact page -->
         <div class="contact-page" id="Contact">
             <!-- contact header container -->
             <div class="contact-header">Contact</div>
             <!-- contact- container -->
             <div class="contact-container">
-                
-                    <!-- contact container one -->
-                    <div class="contact-container-one">
-                        <div class="contact-image"><img class="image-contact"
-                                src="https://cdn-icons-png.flaticon.com/512/5328/5328057.png" width="50vw"
-                                height="50vw"></div>
-                                <!-- ontact-information -->
-                        <div class="contact-information"><span>Contact</span><br><span>6261738534</span></div>
+
+                <!-- contact container one -->
+                <div class="contact-container-one">
+                    <div class="contact-image"><img class="image-contact"
+                            src="https://cdn-icons-png.flaticon.com/512/5328/5328057.png" width="50vw" height="50vw">
                     </div>
-                    <!--email-container  -->
-                    <div class="email-container">
-                        <div class="email-image"> <img class="image-contact"
-                                src="https://cdn-icons-png.flaticon.com/512/2250/2250206.png" width="50vw" height="50vw"
-                                alt=""></div>
-                                <!-- email-information -->
-                        <div class="email-information"><span>Email</span> <br><span><a href="mailto:prajwalnakade8759@gmail.com">prajwalnakade8759@gmail.com</a></span>
-                        </div>
-                    </div>
-                    <!-- linkedin-container -->
-                    <div class="linkedin-container">
-                        <div class="linkedin-image"><a href="https://www.linkedin.com/feed/"><img class="image-contact"
-                                src="https://pngimg.com/d/linkedIn_PNG27.png" width="50vw" height="50vw"></a></div>
-                                <!-- linkedin-information -->
-                        <div class="linkedin-information">
-                            <span><a href="https://www.linkedin.com/feed/">Linkedin</a></span> <br><span>Prajwal Nakade</span>
-                        </div>
-                    </div>
-                    <!-- github-container -->
-                    <div class="github-container">
-                        <div class="github-image">
-                            <a href="https://github.com/PrajwalFullStackDeveloper/portfolio-prajwal"><img class="image-contact"
-                                src="https://img.icons8.com/ios11/512/228BE6/github.png" width="50vw" height="50vw"
-                                alt=""></a></div>
-                                <!-- github-information -->
-                        <div class="github-information"> <span> <a href="https://github.com/PrajwalFullStackDeveloper/portfolio-prajwal">Github</a></span> <br><span>PrawalFullstackDeveloper</span>
-                        </div>
+                    <!-- ontact-information -->
+                    <div class="contact-information"><span>Contact</span><br><span>6261738534</span></div>
+                </div>
+                <!--email-container  -->
+                <div class="email-container">
+                    <div class="email-image"> <img class="image-contact"
+                            src="https://cdn-icons-png.flaticon.com/512/2250/2250206.png" width="50vw" height="50vw"
+                            alt=""></div>
+                    <!-- email-information -->
+                    <div class="email-information"><span>Email</span> <br><span><a
+                                href="mailto:prajwalnakade8759@gmail.com">prajwalnakade8759@gmail.com</a></span>
                     </div>
                 </div>
-            
+                <!-- linkedin-container -->
+                <div class="linkedin-container">
+                    <div class="linkedin-image"><a href="https://www.linkedin.com/feed/"><img class="image-contact"
+                                src="https://pngimg.com/d/linkedIn_PNG27.png" width="50vw" height="50vw"></a></div>
+                    <!-- linkedin-information -->
+                    <div class="linkedin-information">
+                        <span><a href="https://www.linkedin.com/feed/">Linkedin</a></span> <br><span>Prajwal
+                            Nakade</span>
+                    </div>
+                </div>
+                <!-- github-container -->
+                <div class="github-container">
+                    <div class="github-image">
+                        <a href="https://github.com/PrajwalFullStackDeveloper/portfolio-prajwal"><img
+                                class="image-contact" src="https://img.icons8.com/ios11/512/228BE6/github.png"
+                                width="50vw" height="50vw" alt=""></a>
+                    </div>
+                    <!-- github-information -->
+                    <div class="github-information"> <span> <a
+                                href="https://github.com/PrajwalFullStackDeveloper/portfolio-prajwal">Github</a></span>
+                        <br><span>PrawalFullstackDeveloper</span>
+                    </div>
+                </div>
             </div>
+
         </div>
-        <!-- footer container -->
-          <div class="footer">© 2025 Prajwal Nakade. All Rights Reserved.</div>
     </div>
- 
+    <!-- footer container -->
+    <div class="footer">© 2025 Prajwal Nakade. All Rights Reserved.</div>
+    </div>
+
 </body>
 
 </html>

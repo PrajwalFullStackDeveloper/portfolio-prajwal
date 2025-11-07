@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML project</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+         /* project-page */
+        .project-page {
+            width: 100vw;
+            height: 100vh;
+            background-color:#090040;
+        }
+        /*project-header  */
+        .project-header{
+            width: 100vw;
+            height: 20vh;
+            background-color:#090040;
+            font-size: 40px;
+            text-align: center;
+            align-content: center;
+            color: white;
+        }
+        /* live-project button */
+        .live-project{
+            width: 8vw;
+            height: 5vh;
+            border-radius: 25px;
+            background-color:purple;
+            border: none;
+        }
+        /* project container */
+        .project-container{
+            width: 80vw;
+            height: 80vh;
+            background-color:#090040;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        /* project one */
+        .project-one{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+       /* image one container */
+        .image-one{
+            width: 25vw;
+            height: 31vh;
+           background-image: url('https://images.stockcake.com/public/6/e/4/6e4481af-b066-47e0-b718-e51d6a64d5a1_large/illuminated-chess-set-stockcake.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        /* information-one container */
+        .information-one{
+            width: 25vw;
+            height: 7vh;
+            background-color:#090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project two */
+         .project-two{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        /* image two container */
+        .image-two{
+            width: 25vw;
+            height: 31vh;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtecam8wFtyDv4qOQ2KJ0rcYoDOE0x_75XCg&s');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* information two container */
+        .information-two{
+            width: 25vw;
+            height: 7vh;
+            background-color: #090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project-three */
+         .project-three{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        /* image three container */
+        .image-three{
+            width: 25vw;
+            height: 31vh;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/003/079/915/non_2x/school-timetable-rainbow-kid-design-of-planner-vector.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* information three container */
+        .information-three{
+            width: 25vw;
+            height: 7vh;
+            background-color: #090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project four */
+         .project-four{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        /* image four container  */
+        .image-four{
+            width: 25vw;
+            height: 31vh;
+            background-image: url('https://media.istockphoto.com/id/1475807645/vector/3d-calculator-with-floating-coin.jpg?s=612x612&w=0&k=20&c=JfBmUEbdWKrZaNH9VymbsiTv438YjLnt01SYWv5ENNA=');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* information four container */
+        .information-four{
+            width: 25vw;
+            height: 7vh;
+            background-color:#090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project five */
+         .project-five{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        /* image five container  */
+        .image-five{
+            width: 25vw;
+            height: 31vh;
+            background-image: url('https://themewagon.com/wp-content/uploads/2022/08/Frame-3736-2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        } 
+        /* information five container */
+        .information-five{
+            width: 25vw;
+            height: 7vh;
+            background-color: #090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project six */
+         .project-six{
+            width: 25vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        .image-six{
+            width: 25vw;
+            height: 31vh;
+             background-image: url('https://i0.wp.com/sweettoothteaching.com/wp-content/uploads/2025/07/student-data-in-the-classroom.png?fit=1080%2C1080&ssl=1');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .information-six{
+            width: 25vw;
+            height: 7vh;
+            background-color:#090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project view button */
+        .product-button{
+            width: 8vw;
+            height: 6vh;
+            border-radius: 25px;
+            text-align: center;
+            align-content: center;
+            background-color:purple;
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+          @media (min-width:320px) and (max-width:431px){
+            yle>
+        body{
+            overflow-x: hidden;
+        }
+         /* project-page */
+        .project-page {
+            width: 100vw;
+            height: auto;
+            background-color:#090040;
+        }
+        /*project-header  */
+        .project-header{
+            width: 100vw;
+            height: 20vh;
+            background-color:#090040;
+            font-size: 40px;
+            text-align: center;
+            align-content: center;
+            color: white;
+        }
+        /* live-project button */
+        .live-project{
+            width: 10vw;
+            height: 5vh;
+            border-radius: 25px;
+            background-color:purple;
+            border: none;
+        }
+        /* project container */
+        .project-container{
+            width: 80vw;
+            height: 240vh;
+            background-color:#090040;
+            margin-left: 0%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-around;
+            text-align: center;
+        }
+        /* project one */
+        .project-one{
+            width: 100vw;
+            height: 38vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+       /* image one container */
+        .image-one{
+            width: 100vw;
+            height: 31vh;
+           background-image: url('https://images.stockcake.com/public/6/e/4/6e4481af-b066-47e0-b718-e51d6a64d5a1_large/illuminated-chess-set-stockcake.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+           
+        }
+        /* information-one container */
+        .information-one{
+            width: 100vw;
+            height: 7vh;
+            background-color:#090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project two */
+         .project-two{
+            width: 100vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        /* image two container */
+        .image-two{
+            width: 100vw;
+            height: 31vh;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtecam8wFtyDv4qOQ2KJ0rcYoDOE0x_75XCg&s');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* information two container */
+        .information-two{
+            width: 100vw;
+            height: 7vh;
+            background-color: #090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project-three */
+         .project-three{
+            width: 100vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        /* image three container */
+        .image-three{
+            width: 100vw;
+            height: 31vh;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/003/079/915/non_2x/school-timetable-rainbow-kid-design-of-planner-vector.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* information three container */
+        .information-three{
+            width: 100vw;
+            height: 7vh;
+            background-color: #090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project four */
+         .project-four{
+            width: 100vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        /* image four container  */
+        .image-four{
+            width: 100vw;
+            height: 31vh;
+            background-image: url('https://media.istockphoto.com/id/1475807645/vector/3d-calculator-with-floating-coin.jpg?s=612x612&w=0&k=20&c=JfBmUEbdWKrZaNH9VymbsiTv438YjLnt01SYWv5ENNA=');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* information four container */
+        .information-four{
+            width: 100vw;
+            height: 7vh;
+            background-color:#090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project five */
+         .project-five{
+            width: 100vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        /* image five container  */
+        .image-five{
+            width: 100vw;
+            height: 31vh;
+            background-image: url('https://themewagon.com/wp-content/uploads/2022/08/Frame-3736-2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        } 
+        /* information five container */
+        .information-five{
+            width: 100vw;
+            height: 7vh;
+            background-color: #090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project six */
+         .project-six{
+            width: 100vw;
+            height: 38vh;
+            background-color: white;
+              display: flex;
+            flex-direction: column;
+        }
+        .image-six{
+            width: 100vw;
+            height: 31vh;
+             background-image: url('https://i0.wp.com/sweettoothteaching.com/wp-content/uploads/2025/07/student-data-in-the-classroom.png?fit=1080%2C1080&ssl=1');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .information-six{
+            width: 100vw;
+            height: 7vh;
+            background-color:#090040;
+              text-align: center;
+            align-content: center;
+        }
+        /* project view button */
+        .product-button{
+            width: 35vw;
+            height: 6vh;
+            border-radius: 25px;
+            text-align: center;
+            align-content: center;
+            background-color:purple;
+            border: none;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="project-page" id="Project">
+            <!-- project header container on top -->
+            <div class="project-header"> HTML Project </button></a></div>
+            <!-- project-container down side -->
+            <div class="project-container">
+                <!-- project-one container -->
+                <div class="project-one">
+                    <div class="image-one"></div>
+                    <div class="information-one">
+                        <button class="product-button"><a href="./../structural-tag/grid/chess-grid.html">Chess</button> </a>
+                    </div>
+                    
+                </div>
+                <!-- project two container -->
+                <div class="project-two">
+                     <div class="image-two"></div>
+                    <div class="information-two">  <button class="product-button"><a href="../form-tages/form-teg.html">Form</button></a></div>
+                </div>
+                <!-- project three container -->
+                <div class="project-three">
+                     <div class="image-three"></div>
+                    <div class="information-three">
+                         <button class="product-button"><a href="../structural-tag/flex.html/flex-timetable.html">Time Table</button></a>T
+                    </div>
+                </div>
+                <!-- project four container -->
+                <div class="project-four">
+                     <div class="image-four"></div>
+                    <div class="information-four">
+                         <button class="product-button"><a href="../table-tages/calculetor.html">Claculator</button></a>
+                    </div>
+                </div>
+                <!-- project five container -->
+                <div class="project-five">
+                     <div class="image-five"></div>
+                    <div class="information-five">
+                         <button class="product-button"><a href="../structural-tag/flex.html/flex-div.html">Flex</button></a>
+                    </div>
+                </div>
+                <!-- project six container -->
+                <div class="project-six">
+                     <div class="image-six"></div>
+                    <div class="information-six"> <button class="product-button"><a href="../table-tages/student.html ">Data</button></a></div>
+                </div>
+            </div>
+            
+        </div>
+</body>
+</html>

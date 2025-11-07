@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selling price</title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 80vw;
+            height: 80vh;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .display-container{
+            width: 60vw;
+            height: 40vh;
+            background-color: white;
+            margin-left: 10%;
+        }
+          .input-container{
+            width: 60vw;
+            height: 20vh;
+            background-color: white;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="display-container" id="display"></div>
+            <div class="input-container">
+                <input id="input" type="text" placeholder="selling price">
+                <input id="input-one" type="text" placeholder="decount-price">
+                <button onclick="show()">show out put</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function show(){
+let x=Number(document.getElementById("input").value);
+let y=Number(document.getElementById("input-one").value);
+
+document.getElementById("display").innerHTML=x-y;
+    }
+</script>
+</html>
