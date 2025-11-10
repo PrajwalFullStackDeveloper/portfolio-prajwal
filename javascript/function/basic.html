@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic addition</title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 40vw;
+            height: 40vh;
+            background-color: blue;
+            margin-top: 10%;
+            margin-left: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .display-container{
+            width: 30vw;
+            height: 20vh;
+            margin-left: 10%;
+            background-color: white;
+        }
+        .input-container{
+            width: 30vw;
+            height: 10vh;
+              margin-left: 10%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="display-container" id="display"></div>
+            <div class="input-container">
+                <input type="text" id="input" placeholder="enter a number">
+                <input type="text" id="input-one" placeholder="enter a number">
+                <button onclick="showOutput()">send</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function showOutput(){
+        let x=Number(document.getElementById("input").value);
+         let y=Number(document.getElementById("input-one").value);
+         document.getElementById("display").innerHTML=x+y;
+    }
+</script>
+</html>

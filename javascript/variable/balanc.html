@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 30vw;
+            height: 50vh;
+            background-color: gray;
+            margin-left: 30%;
+            margin-top: 10%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .display-container{
+            width: 25vw;
+            height: 15vh;
+            background-color: rgb(78, 90, 59);
+            margin-left: 8%;
+        }
+        .input-group{
+              width: 25vw;
+            height: 15vh;
+            background-color: aqua;
+                margin-left: 8%;
+                align-content: center;
+                justify-content: center;
+        }
+         .button-group{
+              width: 25vw;
+            height: 15vh;
+            background-color:green;
+                margin-left: 8%;
+                 align-content: center;
+                justify-content: center;
+        }
+        input{
+            width: 10vw;
+            height: 6vh;
+        }
+           button{
+            width: 10vw;
+            height: 6vh;
+        }
+        p{
+            margin: 0%;
+            padding: 0%;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="display-container">
+                <p>Current Balance</p>
+                <p id="display">0</p>
+            </div>
+            <div class="input-group">
+                <input type="text" id="input-one" placeholder="Diposite Amount">
+                 <input type="text" id="input-two" placeholder="withdraw amount">
+            </div>
+            <div class="button-group">
+                <button onclick="diposite()">Add</button>
+                 <button onclick="withdraw()">Sub</button>
+            </div>
+        </div>
+    </div>
+   <script>
+    let balance=0;
+     withdrawAmount=0;
+    dipositeAmount=0;
+    document.getElementById("display").innerHTML=balance;
+    function withdraw(){
+       withdrawAmount=document.getElementById('input-two').value;
+       balance=balance-Number(withdrawAmount);
+         document.getElementById("display").innerHTML=balance;
+         document.getElementById("input-two").innerHTML="";
+
+    }
+    function diposite(){
+         dipositeAmount=document.getElementById('input-one').value;
+          balance=balance+Number(dipositeAmount);
+             document.getElementById("display").innerHTML=balance;
+               document.getElementById("input-one").innerHTML="";
+    }
+   </script> 
+</body>
+</html>
