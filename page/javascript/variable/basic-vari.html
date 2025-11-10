@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<style>
+   button{
+    width: 10vw;
+    height: 5vh;
+   }
+</style>
+<body>
+   <p id="total-amount"></p>
+    <button onclick="getAmount()">show output</button>
+     <p id="display-1"></p>
+     <p id="display-2"></p>
+    <script>
+        // let a=0;
+        // let input=0;
+        // document.getElementById("display").innerHTML=a;
+        // function add(){
+        //     input= Number(prompt ())
+        //     a= a + input;
+        //     alert(a)
+        //     document.getElementById("display").innerHTML=a;
+let Totalbalance =10000;
+let withdrawAmount =0;
+    document.getElementById("total-amout").innerHTML= Totalbalance;
+    function getAmount(){
+        withdrawAmount = Number(prompt("Enter amount to withdraw"));
+         
+        balance = Totalbalance-withdrawAmount;
+      
+        document.getElementById("display-1").innerHTML=" withdrawAmount: "+withdrawAmount;
+        document.getElementById("display-2").innerHTML="Balance Amount :"+balance;
+        document.getElementById("total-amount").innerHTML=Totalbalance;
+    }
+    </script>
+</body>
+</html>

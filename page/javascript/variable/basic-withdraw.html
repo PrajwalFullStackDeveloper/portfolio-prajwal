@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>withdraw</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 30vw;
+            height: 60vh;
+            box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.307);
+        }
+        button{
+            width: 10vw;
+            height: 6vh;
+        }
+        button:hover{
+            background-color:pink;
+        }
+    </style>
 </head>
 <body>
+   
     <script>
        
         let balance =30000;
         function getamount(){
             let amount= Number(prompt("Enter amount withdraw: "))
-            alert ("Balance amount is"+Number(balance-amount))
+            alert ("Balance amount is"+ Number(balance-amount))
         }
+        getamount()
     </script>
 </body>
 </html>

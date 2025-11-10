@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Amount</title>
+    <style>
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    padding-top: 10%;
+}
+.container{
+    width: 20vw;
+    height: 55vh;
+    background-color: white;
+ margin-left: 40%;
+ border-radius: 5%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+ 
+}
+.wthdraw{
+    width: 16vw;
+    height: 10vh;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 22px;
+   
+}
+.display-container{
+    width: 16vw;
+    height: 15vh;
+      background-color: white;
+      text-align: center;
+      align-content: center;
+     
+}
+.input-container{
+    width: 16vw;
+    height: 25vh;
+      background-color:white; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+     
+}
+.in-one{
+    width: 15.5vw;
+    height: 5vh;
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 3px;
+}
+.withdraw-container{
+      width: 16vw;
+    height: 5vh;
+    background-color: white;
+    border: solid blue 2px;
+    border-radius: 3px;
+    background-color:rgb(54, 54, 93);
+    text-align: center;
+  align-content: center;
+  color: white;
+}
+.success{
+       width: 16vw;
+    height: 5vh;
+color: green;
+    background-color: white;
+    border: solid green 2px;
+    border-radius: 3px;
+    background-color: rgba(109, 140, 109, 0.892);
+    text-align: center;
+    align-content: center;
+    display: none;
+}
+#display{
+    font-size: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="wthdraw"><b>ATM Whithdrawal</b></div>
+            <div class="display-container">
+                <p >Current Balance</p>
+                <p  id="display"><b>10000</b></p>
+            </div>
+            <div class="input-container">
+                <input id="input-one" class="in-one" type="text" placeholder="Enter your withdraw amount">
+                <div class="withdraw-container" onclick="add()">Withdraw</div>
+                <div class="success" id="input-two">Withdrawal Successful</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+         function add(){
+            let totalbalance=10000;
+        let x=Number(document.getElementById("input-one").value)
+        let s=totalbalance-x;
+        document.getElementById("display").innerHTML=totalbalance;
+        document.getElementById("display").innerHTML=s;
+        document.getElementById("input-two").style.display= "block";
+
+        }
+
+    </script>
+</body>
+</html>
