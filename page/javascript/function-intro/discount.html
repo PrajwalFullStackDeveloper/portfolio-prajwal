@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+     <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 80vw;
+            height: 80vh;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .display-container{
+            width: 60vw;
+            height: 40vh;
+            background-color: white;
+            margin-left: 10%;
+        }
+        .input-container{
+            width: 60vw;
+            height: 20vh;
+             margin-left: 10%;
+               background-color: white;
+        }
+     </style>
+</head>
+<body>
+   <div class="main-container">
+    <div class="container">
+        <div class="display-container" id="display"></div>
+        <div class="input-container">
+<input id="input" type="text" placeholder="discount">
+<input id="input-one" type="text" placeholder="list price">
+<button onclick="discount()" >show out put</button>
+        </div>
+    </div>
+   </div>
+</body>
+<script>
+    function discount(){
+let x=Number(document.getElementById("input").value);
+ let y=Number(document.getElementById("input-one").value);
+let z=x/y;
+document.getElementById("display").innerHTML=z*100;
+    }
+</script>
+</html>

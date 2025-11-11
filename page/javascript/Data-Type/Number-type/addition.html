@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 20vw;
+            height: 65vh;
+            background-color:white;
+            margin-left: 40%;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+              box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.305);
+       
+           
+        }
+       .display-container{
+        width: 18vw;
+        height: 15vh;
+        background-color: white;
+        border-radius: 3px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.305);
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        font-size: 25px;
+       }
+       p{
+        font-size: 20px;
+        margin-right: 50%;
+       }
+       input{
+        width: 18vw;
+        height: 5vh;
+        border-radius: 4px;
+        border: none;
+         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.305); 
+       }
+       button{
+        width: 18vw;
+        height: 5vh;
+        background-color: rgb(83, 112, 83);
+        border: none;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h1> Sum Calculator</h1>
+        <div id="display" class="display-container"></div>
+        <p> First   Number</p>
+        <input id="input-one" type="text" placeholder="Enter a Number">
+        <p>Second Number</p>
+         <input id="input-two"  type="text" placeholder="Enter a Number"> <br>
+
+        <button onclick="add()">Calculate Sum</button>
+    </div>
+    <script>
+        function add(){
+        let x=Number(document.getElementById("input-one").value);
+        let y=Number(document.getElementById("input-two").value);
+        s=x+y;
+        document.getElementById("display").innerHTML=s;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-p</title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 80vw;
+            height: 80vh;
+            margin-top: 10%;
+            margin-left: 10%;
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+        }
+        .form-container{
+            width: 40vw;
+            height: 80vh;
+            background-color: bisque;
+        }
+        .display-container{
+            width: 40vw;
+            height: 80vh;
+            background-color: aqua;
+        }
+        input{
+            width: 30vw;
+            height: 10vh;
+        }
+        button{
+            width: 30vw;
+            height: 10vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="form-container">
+                <label>Full name</label> <br>
+                <input id="input" type="text" placeholder="Enter your name" >  <br>
+                 <label>Age</label> <br>
+                <input id="input-one" type="text" placeholder="Enter your name" > <br>
+                <label>course</label> <br>
+                <input id="input-two" type="text" placeholder="Enter your name" > <br> <br>
+                <button onclick="showOutput()">click</button>
+            </div>
+            <div class="display-container" id="display"></div>
+        </div>
+    </div>
+    <script>
+function showOutput(){
+    let x=document.getElementById("input").value;
+    let y=document.getElementById("input-one").value;
+    let z=document.getElementById("input-two").value;
+    document.getElementById("display").innerHTML="Full Name :"+x+"<br/>"+"Age :"+ y +"<br/>"+"course :"+z;
+}
+    </script>
+</body>
+</html>

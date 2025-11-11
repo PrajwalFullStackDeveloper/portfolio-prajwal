@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .main-container{
+        width: 100vw;
+        height: 100vh;
+    }
+    .container{
+        width: 30vw;
+        height: 20vw;
+        background-color: white;
+    }
+   </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container" id="display"></div>
+        <input id="input" type="text">
+         <input id="input-one" type="text">
+          <input id="input-two" type="text">
+         
+          <button onclick="avarage()"> show output</button>
+    </div>
+</body>
+<script>
+function avarage(){
+    let x= Number(document.getElementById("input").value);
+    let y= Number(document.getElementById("input-one").value);
+    let z= Number(document.getElementById("input-two").value);
+     let s=x+y+z;
+    document.getElementById("display").innerHTML= s/3;
+}
+</script>
+</html>

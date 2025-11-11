@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            padding-top: 2%;
+        }
+
+        .container {
+            width: 80vw;
+            height: 70vh;
+            background-color: aquamarine;
+            margin-left: 10%;
+            margin-top: 2%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .form-container {
+            width: 40vw;
+            height: 70vh;
+            background-color: bisque;
+        }
+
+        .display-container {
+            width: 40vw;
+            height: 70vh;
+            background-color: rgba(164, 133, 133, 0.712);
+        }
+    
+
+        
+    label{
+
+        font-size: 25px;
+    }
+    input{
+        width: 30vw;
+        height: 5vh;
+    }
+    button{
+        width: 30vw;
+        height: 5vh;
+        background-color: green;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="form-container">
+                
+                    <label>Full Name</label> <br>
+                    <input type="text" id="input"> <br><br> 
+                    <label>Age</label> <br>
+                    <input type="text" id="input-one"><br><br> 
+                     <label>Email</label> <br>
+                    <input type="text" id="input-two"><br><br> 
+                     <label>Gneder</label> <br>
+                    <input type="text" id="input-three"><br><br>
+                     <label>Course</label> <br>
+                    <input type="text" id="input-four"><br><br> <br>
+                    <button onclick="showOutput()" >submit</button>
+                
+            </div>
+            <div class="display-container" id="display"></div>
+        </div>
+    </div>
+
+</body>
+<script>
+      function showOutput(){ 
+        let x= document.getElementById("input").value;
+        let y= document.getElementById("input-one").value;
+        let a= document.getElementById("input-two"). value;
+         let b= document.getElementById("input-three"). value;
+          let c= document.getElementById("input-four"). value;
+document.getElementById("display").innerHTML= "Full Name:"+x+"<br/>"+"Age:"+y+"<br/>"+"Email:"+a+"</br>"+"Gender:"+b+"<br/>"+"Course:"+c;
+}
+</script>
+
+
+
+</html>
