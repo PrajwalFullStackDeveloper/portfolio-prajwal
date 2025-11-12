@@ -11,7 +11,7 @@
         }
         .container{
             width: 22vw;
-            height: 75vh;
+            height: 60vh;
             background-color:white;
             margin-left: 40%;
             margin-top: 10%;
@@ -59,24 +59,20 @@
 </head>
 <body>
     <div class="container">
-      <h1> Sum Calculator</h1>
+      <h1> Square Root</h1>
         <div id="display" class="display-container"></div>
-        <p> First   Number</p>
-        <input id="input-one" type="text" placeholder="Enter a Number">
-        <p>Second Number</p>
-         <input id="input-two"  type="text" placeholder="Enter a Number"> <br>
+        <p> select   Number</p>
+        <input id="input-one" type="text" placeholder="Enter a Number"> <br>
+       
 
         <button onclick="add()">Calculate Sum</button>
     </div>
     <script>
         function add(){
-            // input
         let x=Number(document.getElementById("input-one").value);
-        let y=Number(document.getElementById("input-two").value);
-        // process
-        s=x+y;
-        // out put
-        document.getElementById("display").innerHTML="Sum is :"+ s;
+        
+        s=x*x;
+        document.getElementById("display").innerHTML=s;
         }
     </script>
 

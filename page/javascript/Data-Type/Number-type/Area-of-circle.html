@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airea</title>
+</head>
+<body>
+    <input id="input-one" type="text"> <br>
+    <button  onclick="Calculatearea()">value of area</button>
+      <p id="display"></p>
+      <script>
+        function Calculatearea(){
+            let radius= document.getElementById("input-one").value;
+            let x=3.1416;
+            // process
+            Area= x * Number(radius) * Number(radius);
+            // output
+           document.getElementById("display").innerHTML=Area;
+        }
+      </script>
+</body>
+</html>
