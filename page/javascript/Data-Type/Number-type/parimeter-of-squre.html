@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airea</title>
+    <title>perimeter</title>
     <style>
       .main-container{
         width: 100vw;
@@ -25,8 +25,8 @@
       .circle{
         width: 5vw;
         height: 5vw;
-        border-radius: 100%;
-        background-color: rgba(0, 128, 0, 0.315);
+       border: solid 2px;
+        background-color:white;
       }
       input{
         width: 30vw;
@@ -58,11 +58,11 @@
 <body>
    <div class="main-container">
     <div class="container">
-      <h2> Circle Area Calculator</h2>
+      <h2>Square perimeter Calculator</h2>
       <div class="circle"></div>
-      <label><h2>Radius</h2></label>
-      <input id="input-one" type="number" placeholder="Enter Number"> <br>
-      <button onclick="Area()">Calculate Area</button> <br>
+      <label>Side of Square</label>
+      <input id="input-one" type="number" placeholder="Side of Square"> <br>
+      <button onclick="Area()">perimeter of square </button> <br>
       <div id="display" class="display-container"> </div>
     </div>
    </div>
@@ -70,11 +70,11 @@
 function Area(){
   // input
   let num1=document.getElementById("input-one").value;
-  let num2=3.1416;
+  
   // process
-  area=num2 * Number(num1) * Number(num1);
+  area= 4 * Number(num1) ;
   // out put
-  document.getElementById("display").innerHTML="The area of circle is:"+area;
+  document.getElementById("display").innerHTML="The perimeter of Square is:"+area;
 }
    </script>
 </body>

@@ -25,14 +25,17 @@
         //     a= a + input;
         //     alert(a)
         //     document.getElementById("display").innerHTML=a;
+        
+        // input
 let Totalbalance =10000;
 let withdrawAmount =0;
     document.getElementById("total-amout").innerHTML= Totalbalance;
     function getAmount(){
+        // input
         withdrawAmount = Number(prompt("Enter amount to withdraw"));
-         
+        //  process
         balance = Totalbalance-withdrawAmount;
-      
+    //   out put
         document.getElementById("display-1").innerHTML=" withdrawAmount: "+withdrawAmount;
         document.getElementById("display-2").innerHTML="Balance Amount :"+balance;
         document.getElementById("total-amount").innerHTML=Totalbalance;

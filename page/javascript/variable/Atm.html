@@ -180,20 +180,28 @@
         </div>
     </div>
      <script>
+        // input
     let balance= 10000;
      withdrawAmount=0;
     dipositeAmount=0;
+    // output
     document.getElementById("display").innerHTML=balance;
     function withdraw(){
+        // input
        withdrawAmount=document.getElementById('input-two').value;
+    //    process
        balance=balance-Number(withdrawAmount);
+    //    out put
          document.getElementById("display").innerHTML=balance;
          document.getElementById("input-two").innerHTML="";
 
     }
     function diposite(){
+        // input
          dipositeAmount=document.getElementById('input-one').value;
+        //  process
           balance=balance+Number(dipositeAmount);
+        //   output
              document.getElementById("display").innerHTML=balance;
                document.getElementById("input-one").innerHTML="";
     }

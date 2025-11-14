@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+</head>
+<body><p id="display"></p>
+    <label>Weight</label> <br>
+    <input id="input-one" type="number" placeholder="Weight in kilogram"> <br> <br>
+    <label>height</label><br>
+    <input id="input-two"  type="number" placeholder="height in meter"><br> <br>
+    <button onclick="BMI()">Calculate BMI</button>
+    <script>
+        function BMI(){
+            let weight=document.getElementById("input-one").value;
+            let height=document.getElementById("input-two").value;
+            let heightsqaure=Number(height)*Number(height);
+            bmi=Number(weight) /heightsqaure;
+            document.getElementById("display").innerHTML=bmi;
+        }
+    </script>
+</body>
+</html>

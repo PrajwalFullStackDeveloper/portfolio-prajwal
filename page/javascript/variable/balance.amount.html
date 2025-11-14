@@ -100,12 +100,15 @@ color: green;
         </div>
     </div>
     <script>
+    
          let totalbalance=10000;
          withdrawAmount=0;
          function add(){
-           
-        withdrawAmount =document.getElementById("input-one").value
+        //    input
+        withdrawAmount =document.getElementById("input-one").value;
+        // process
         totalbalance=totalbalance- Number( withdrawAmount);
+        // out put
         document.getElementById("display").innerHTML=totalbalance;
        
         document.getElementById("input-two").style.display= "block";
