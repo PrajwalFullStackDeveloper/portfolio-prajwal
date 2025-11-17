@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inches to meter</title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+        .container{
+            width: 30vw;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: space-evenly;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.269);
+        }
+        input{
+            width: 25vw;
+            height: 5vh;
+            border-radius: 10px;
+        }
+        button{
+            width: 25vw;
+            height: 5vh;
+        }
+        .display-container{
+            width: 25vw;
+            height: 10vh;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.269);
+            display: flex;
+             align-items: center;
+            font-size: 25px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            
+         <h2>Inches to meter</h2>
+         <label>Enter a Value</label>
+         <input id="input-one" type="number">
+         <button onclick="convert()">Convert (inch to m)</button>
+         <div id="display" class="display-container"></div>
+        </div>
+    </div>
+    <script>
+        function convert(){
+            let num1=document.getElementById("input-one").value;
+            let num2=Number(num1)*0.0254;
+            document.getElementById("display").innerHTML=num2;
+        }
+    </script>
+</body>
+</html>

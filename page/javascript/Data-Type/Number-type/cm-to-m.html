@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cm to Meter</title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .container{
+            width: 30vw;
+            height: 60vh;
+            box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.217);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+             align-items: center;
+            
+            justify-content: space-evenly;
+        }
+        .display-container{
+            width: 25vw;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+           
+            justify-content: center;
+            font-size: 25px;
+             box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.217);
+        }
+        input{
+            width: 25vw;
+            height: 4vh;
+
+        }
+        button{
+            width: 25vw;
+            height: 6vh;
+            background-color:rgba(0, 128, 0, 0.322);
+            border: none;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Convert cm to m</h1>
+            <label>Enter a Number</label>
+            <input id="input-one" type="number" placeholder="Enter in value in cm">
+            <button onclick="convert()">Convert (meter)</button>
+            <div id="display" class="display-container"></div>
+        </div>
+    </div>
+    <script>
+        function convert(){
+            let num1=document.getElementById("input-one").value;
+            let num2=Number(num1)/100;
+            document.getElementById("display").innerHTML=num2;
+        }
+    </script>
+</body>
+</html>

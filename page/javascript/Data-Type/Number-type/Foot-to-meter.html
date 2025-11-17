@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot to meter</title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        .container{
+          width: 30vw;
+          height: 60vh;
+          box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.386);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;  
+           border-radius: 13px;
+        }
+        input{
+            width: 25vw;
+            height: 4vh;
+            border-radius: 3px;
+        }
+        button{
+            width: 25vw;
+            height: 5vh;
+            border-radius: 25px;
+            background-color: rgba(0, 128, 0, 0.313);
+            border: none;
+        }
+        .display-container{
+            width: 25vw;
+            height: 10vh;
+            box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.386);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Foot to Meter</h1>
+            <label>Enter Number</label>
+            <input id="input-one" type="number" placeholder="Enter a value in feet">
+            <button onclick="convert()">Convert the Value</button>
+            <div id="display" class="display-container"></div>
+        </div>
+    </div>
+    <script>
+        function convert(){
+            let num1=document.getElementById("input-one").value;
+             let num2=0.3048;
+            let sum=Number(num1)*Number(num2)
+            document.getElementById("display").innerHTML=sum;
+        }
+    </script>
+</body>
+</html>
