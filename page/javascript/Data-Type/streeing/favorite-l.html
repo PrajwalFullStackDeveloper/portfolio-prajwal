@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fevorite lenguage</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+             justify-content:center;
+           
+        }
+        .main-container{
+            width: 40vw;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: space-evenly;
+            box-shadow: 0px 4px 20px 0px;
+        }
+        button{
+            width: 30vw;
+            height: 6vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:rgba(98, 57, 135, 0.34);
+        }
+        p{
+            width: 30vw;
+            height: 15vh;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.235);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Favorite Programing lenguage</h1>
+        <button onclick="language()"> tell us your fevorite lenguage</button>
+        <p id="display"></p>
+    </div>
+    <script>
+        function language(){
+        let lan=prompt( "Enter your fevorite language ");
+        document.getElementById("display").innerHTML="Your favorite language is : "+lan
+        }
+    </script>
+</body>
+</html>

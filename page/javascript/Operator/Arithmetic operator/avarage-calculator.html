@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average calculator</title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 35vw;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+            
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.167);
+        }
+        input{
+            width: 30vw;
+            height: 4vh;
+        }
+        label{
+            margin-right: 60%;
+            font-size: 18px;
+        }
+        button{
+            width: 30vw;
+            height: 6vh;
+            background-color:brown;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+
+        }
+        p{
+            width: 30vw;
+            height: 10vh;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.226);
+         
+            font-size: 25px;
+        }
+        b{
+            color: red;
+        }
+        @media (min-width:300px) and (max-width:431px){
+            .main-container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 100vw;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+            
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.167);
+        }
+        input{
+            width: 90vw;
+            height: 4vh;
+        }
+        label{
+            margin-right: 60%;
+            font-size: 18px;
+        }
+        button{
+            width: 90vw;
+            height: 6vh;
+            background-color:brown;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+
+        }
+        p{
+            width: 90vw;
+            height: 10vh;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.226);
+         
+            font-size: 25px;
+        }
+        b{
+            color: red;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Average Calculator</h1>
+            <label>First Number:</label>
+            <input id="input-one" type="number" placeholder="Enter a Number"><br>
+            <label>Second Number:</label>
+            <input id="input-two"  type="number" placeholder="Enter a Number"><br>
+            <label>Third Number:</label>
+            <input id="input-three"  type="number" placeholder="Enter a Number"><br>
+            <button onclick="avarege()">Calculate Average</button>
+            <p>The average of <b id="first"></b>     ,   <b id="second"></b>   ,   and <b id="third"></b>   is   = <b id="display"></b></p>
+        </div>
+    </div>
+    <script>
+        function avarege(){
+        let num1=document.getElementById("input-one").value;
+         let num2=document.getElementById("input-two").value;
+          let num3=document.getElementById("input-three").value;
+          let sum=Number(num1)+Number(num2)+Number(num3);
+          let sum1=sum/3;
+          document.getElementById("first").innerHTML=num1;
+            document.getElementById("second").innerHTML=num2;
+              document.getElementById("third").innerHTML=num3;
+          document.getElementById("display").innerHTML=sum1;
+          }
+
+    </script>
+</body>
+</html>

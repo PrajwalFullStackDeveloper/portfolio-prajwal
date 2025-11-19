@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first is small </title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+           display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 40vw;
+            height: 80vh;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.267);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: space-evenly;
+        }
+        .input-container{
+            width: 30vw;
+            height: 12vh;
+        }
+        .display-container{
+            width: 30vw;
+            height: 10vh;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.251);
+        }
+        input{
+            width:30vw;
+            height: 5vh;
+        }
+        button{
+            width: 30vw;
+            height: 5vh;
+            background-color: rgba(0, 128, 0, 0.283);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Number comparison</h1>
+            <div class="input-container">
+                <label ><b>Enter a Number</b></label> <br>
+                <input id="input-one" type="Number" placeholder="Enter a Number">
+            </div>
+             <div class="input-container">
+                 <label ><b>Enter a Number</b></label><br>
+                <input id="input-two" type="Number" placeholder="Enter a Number">
+             </div>
+             <button onclick=" call() ">Compare (First Number < second Number)</button>
+        <div id="display" class="display-container"></div>
+        </div>
+        
+    </div>
+    <script>
+        function call(){
+            let num1=document.getElementById("input-one").value;
+            let num2=document.getElementById("input-two").value;
+            let num3=Number(num1)<Number(num2);
+            document.getElementById("display").innerHTML=num3;
+        }
+    </script>
+</body>
+</html>

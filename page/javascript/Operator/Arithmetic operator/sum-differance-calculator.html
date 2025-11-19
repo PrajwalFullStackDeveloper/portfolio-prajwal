@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum and differant calculator</title>
+    <style>
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 35vw;
+    height: 70vh;
+    display: flex;
+ flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.267) ;
+}
+input{
+    width:30vw;
+    height: 4vh;
+}
+button{
+    width: 30vw;
+    height: 7vh;
+    background-color: rgba(0, 255, 255, 0.37);
+    border: none;
+    border-radius: 5px;
+}
+p{
+    width: 30vw;
+    height: 8vh;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.34);
+      display: flex;
+      align-items: center;
+    justify-content: center;
+}
+pre{
+  width: 30vw;
+    height: 8vh;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+ <h1> Sum And Difference Calculator</h1>
+    <label>First Number</label>
+    <input id="input-one" type="number" placeholder="Enter a number"><br>
+    <label>Second Number</label>
+     <input id="input-two" type="number" placeholder="Enter a number"><br><br>
+     <button onclick=" calculate()">Calculate</button>
+     <p >Sum Of two Number : <b id="display"></b></p>
+     <pre > Differance of two Number :<b id="display-one"></b></pre>
+        </div>
+    </div>
+   
+    <script>
+        function calculate(){
+
+       
+        let num1=document.getElementById("input-one").value;
+         let num2=document.getElementById("input-two").value;
+         let sum=Number( num1)+Number(num2);
+          let sum1=Number( num1)-Number(num2);
+          document.getElementById("display").innerHTML=sum;
+            document.getElementById("display-one").innerHTML=sum1;
+           
+            }
+    </script>
+</body>
+</html>
